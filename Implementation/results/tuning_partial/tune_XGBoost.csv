@@ -1,0 +1,2 @@
+Model,Dataset,Feature Set Used,Before Tuning Accuracy,Before Tuning Macro F1,After Tuning Accuracy,After Tuning Macro F1,Best Parameters,Macro F1 Improvement,Before Tuning CV Macro F1,After Tuning CV Macro F1,CV Macro F1 Change,Tuning Time (min)
+XGBoost,TweetEval,TF-IDF unigram + bigram (FS1),0.5602,0.4671,0.5825,0.523,"{'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 400}",0.0559,0.5639,0.5965,0.0326,40.3

@@ -1,0 +1,6 @@
+Subgroup,N Misclassified,Misclassification Rate,HCER,MCE,HCER > 0.30?,Error Rate Gap,HCER Gap,MCE Gap,Overconfident Where Weakest?,Interpretation
+emoji-heavy,264,0.3793103448275862,0.4962121212121212,0.6980725154621285,Yes,-0.028652724993533274,0.057975440401182965,0.017151944407713282,No,50% of errors made at confidence above 0.70. High ethical risk — the model is confidently wrong here.
+other,405,0.3629032258064516,0.4888888888888889,0.695850873023029,Yes,,,,,49% of errors made at confidence above 0.70. High ethical risk — the model is confidently wrong here.
+slang-heavy,23,0.38333333333333336,0.4782608695652174,0.7064324156335636,Yes,-0.024629736487786102,0.040024188754279155,0.025511844579148457,No,48% of errors made at confidence above 0.70. High ethical risk — the model is confidently wrong here.
+formal,4242,0.40796306982111946,0.43823668081093825,0.6809205710544152,Yes,,,,,Reference group.
+sarcasm,3,0.21428571428571427,0.3333333333333333,0.5994230032571518,Yes,-0.1936773555354052,-0.10490334747760494,-0.08149756779726336,No,33% of errors made at confidence above 0.70. High ethical risk — the model is confidently wrong here.

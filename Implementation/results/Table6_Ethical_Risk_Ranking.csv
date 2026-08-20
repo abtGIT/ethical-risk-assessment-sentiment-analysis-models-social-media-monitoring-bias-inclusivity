@@ -1,0 +1,2 @@
+Model,Main Dataset Macro F1,Cross-Dataset Macro F1,Generalisation Gap,Highest Risk Subgroup,XAI Finding,WGA,Subgroup F1 Variance,Mean F1 Gap,Max HCER,Performance Risk,Fairness Risk,Misclassification Risk,Explainability Risk,Robustness Risk,Total Risk Score,Final Ethical Risk Level
+LogisticRegression,0.5452957681314549,0.5038306490180208,0.04146511911343409,formal,See Table 6b for SHAP subgroup feature overlap,0.5920369301788806,0.0002409529491875403,-0.08984531328068183,0.4962121212121212,2,2,3,2,1,10,Medium

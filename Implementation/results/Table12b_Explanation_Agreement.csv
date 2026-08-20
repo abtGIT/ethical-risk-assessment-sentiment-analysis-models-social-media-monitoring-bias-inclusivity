@@ -1,0 +1,7 @@
+Subgroup A,Subgroup B,Jaccard,Shared Features
+formal,emoji-heavy,0.25,"punct_intensity, it, to, char_ i "
+formal,slang-heavy,0.111,"punct_intensity, char_ i "
+formal,sarcasm,0.111,"punct_intensity, not"
+emoji-heavy,slang-heavy,0.25,"punct_intensity, love, slang_ratio, char_ i "
+emoji-heavy,sarcasm,0.111,"punct_intensity, great"
+slang-heavy,sarcasm,0.053,punct_intensity

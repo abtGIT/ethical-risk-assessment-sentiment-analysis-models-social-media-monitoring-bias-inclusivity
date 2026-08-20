@@ -1,0 +1,5 @@
+Subgroup,N,ROC-AUC (macro),PR-AUC (macro)
+emoji-heavy,696,0.7882,0.6423
+slang-heavy,60,0.8067,0.7101
+sarcasm,14,0.9512,0.9461
+formal,10398,0.7724,0.6352

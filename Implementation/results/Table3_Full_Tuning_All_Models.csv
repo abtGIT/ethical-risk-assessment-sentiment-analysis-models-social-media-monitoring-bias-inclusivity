@@ -1,0 +1,7 @@
+Model,Dataset,Feature Set Used,Before Tuning Accuracy,Before Tuning Macro F1,After Tuning Accuracy,After Tuning Macro F1,Best Parameters,Macro F1 Improvement,Final Rank After Tuning,Before Tuning CV Macro F1,After Tuning CV Macro F1,CV Macro F1 Change,Tuning Time (min)
+LogisticRegression,TweetEval,TF-IDF unigram + bigram (FS1),0.5865,0.5453,0.58,0.5672,"{'C': 10, 'penalty': 'l2'}",0.0219,1,0.584,0.6158,0.0319,1.4
+LinearSVM,TweetEval,TF-IDF unigram + bigram (FS1),0.5876,0.5648,0.5876,0.5648,{'estimator__C': 1},0.0,2,0.6097,0.6097,0.0,1.2
+MultinomialNB,TweetEval,TF-IDF unigram + bigram (FS1),0.5339,0.4349,0.5791,0.5589,{'alpha': 0.1},0.1241,3,0.4702,0.5846,0.1144,0.1
+XGBoost,TweetEval,TF-IDF unigram + bigram (FS1),0.5602,0.4671,0.5825,0.523,"{'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 400}",0.0559,4,0.5639,0.5965,0.0326,40.3
+RandomForest,TweetEval,TF-IDF unigram + bigram (FS1),0.5383,0.4169,0.5394,0.4169,"{'min_samples_leaf': 1, 'n_estimators': 200}",0.0001,5,0.4893,0.4893,-0.0,32.6
+Gradient Boosting,TweetEval,TF-IDF unigram + bigram (FS1),,,,,not run — boosting baseline in this study is XGBoost,,,,,,

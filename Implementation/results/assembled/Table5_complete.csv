@@ -1,0 +1,22 @@
+Error Type,Subgroup Mainly Affected,Actual Sentiment,Predicted Sentiment,Number of Cases,Percentage of Total Errors,Rate Within Subgroup,Example Text
+Negative -> Neutral,formal,negative,neutral,1491,30.2,14.34,Melania Trump sues Slovenia journalist over 'escort' claims via @user
+Neutral -> Positive,formal,neutral,positive,948,19.2,9.12,"@user When will Melania do her ""I have a dream"" speech? I'm looking forward to it :)"
+Neutral -> Negative,formal,neutral,negative,855,17.32,8.22,Sheikh Othman #Aden police arrested a cell of 6 suspected terrorists allegedly plotting the assassination of a lawyer in
+Positive -> Neutral,formal,positive,neutral,518,10.49,4.98,The Reputation Doctor weighs in on Tony Romo #NFL @user joins @user on #TheMorningRush LISTEN:
+Negative -> Positive,formal,negative,positive,341,6.91,3.28,Is this the best George soros could come up lots of love
+Positive -> Negative,formal,positive,negative,89,1.8,0.86,"Medicare, people. Don't mess with the olds. Mobilize them."
+Positive -> Neutral,emoji-heavy,positive,neutral,89,1.8,12.79,Louie 😍♥ #onedirection  #MPN & #MtvStarsNiallHoran
+Neutral -> Positive,emoji-heavy,neutral,positive,62,1.26,8.91,"As an emoji user, I am thrilled there is a ""heil"" emoji!  🙋 lol #nazi"
+Negative -> Neutral,emoji-heavy,negative,neutral,59,1.2,8.48,"@user @user do you think Malcolm X, Muhammad Ali, and MLK, ever had drinks with the KKK? 🤔"
+Neutral -> Negative,emoji-heavy,neutral,negative,26,0.53,3.74,of course yes to Death Penalty 😡 criminals must die in more grievous cause of death.
+Negative -> Positive,emoji-heavy,negative,positive,19,0.38,2.73,It's freaking ONE day after thanksgiving and Katrina is already blasting the xmas music... GOD HELP US... 😒
+Neutral -> Positive,slang-heavy,neutral,positive,10,0.2,16.67,@user The shade! Lol! #MariahsWorld
+Positive -> Negative,emoji-heavy,positive,negative,9,0.18,1.29,ricky martin has been my crush since i was like 8... i don't think that's ever gonna change 🤔
+Negative -> Neutral,slang-heavy,negative,neutral,5,0.1,8.33,@user Pity the conservatives in SF!  Lol
+Neutral -> Negative,slang-heavy,neutral,negative,3,0.06,5.0,I'm definitely too dumb for Westworld lol
+Positive -> Negative,slang-heavy,positive,negative,2,0.04,3.33,Ashley Graham is so hot wtf
+Negative -> Positive,slang-heavy,negative,positive,2,0.04,3.33,@user @user Gotta love experts on Putin style.
+Negative -> Neutral,sarcasm,negative,neutral,1,0.02,7.14,"@user @user Sure. Why not? How about ramp up in drone strikes? FISA courts? US Citz targeted w/out due process? BTW, thi"
+Positive -> Neutral,slang-heavy,positive,neutral,1,0.02,1.67,"Hey Colts, nice backup Quarterback, bro. S/Tony Romo #jaymohrsports"
+Neutral -> Negative,sarcasm,neutral,negative,1,0.02,7.14,It's not because Trump was elected or because Brexit happened that the Anglo-American superiority complex ceases to be a
+Neutral -> Positive,sarcasm,neutral,positive,1,0.02,7.14,@user for sure. Dark horse Cy Young candidate too

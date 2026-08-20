@@ -1,0 +1,5 @@
+Taxonomy Type,Name,Subgroup Mainly Affected,N Cases,% of Total Errors,Example Text,Top SHAP Feature,Anchor Rule,Anchor Precision,Mean Confidence
+Type 1,Lexical Trap,formal,18,54.5,"@user When will Melania do her ""I have a dream"" speech? I'm looking forward to it :)",looking forward,,,0.885
+Type 2,Emoji Polarity Confusion,emoji-heavy,10,30.3,"As an emoji user, I am thrilled there is a ""heil"" emoji!  🙋 lol #nazi",emoji,,,0.961
+Type 4,Noise and Slang Distortion,slang-heavy,3,9.1,@user The shade! Lol! #MariahsWorld,punct_intensity,,,0.806
+Type 3,Sarcasm Inversion,slang-heavy,2,6.1,Is this the best George soros could come up lots of love,of love,,,0.959

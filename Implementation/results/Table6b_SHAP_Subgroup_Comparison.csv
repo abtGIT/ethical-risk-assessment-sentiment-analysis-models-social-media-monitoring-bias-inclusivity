@@ -1,0 +1,5 @@
+Subgroup,Top 5 Features,Shared With Formal,Unique To This Subgroup,Overlap With Formal %
+formal,"punct_intensity, to, not, trump, char_ed ",20,,100.0
+emoji-heavy,"happy, punct_intensity, love, char_ i , good",13,"slang_ratio, we, my, char_rea, amazing",65.0
+slang-heavy,"slang_ratio, punct_intensity, love, lol, bad",8,"slang_ratio, bet, char_ lol, bad, wtf",40.0
+sarcasm,"not, at all, not at, idiots, punct_intensity",6,"at all, char_s! , fantastic, as if, for sure",30.0

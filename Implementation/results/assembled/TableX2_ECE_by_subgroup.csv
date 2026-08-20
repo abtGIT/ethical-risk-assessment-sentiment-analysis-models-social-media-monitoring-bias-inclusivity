@@ -1,0 +1,5 @@
+Subgroup,N,ECE,Mean Confidence,Accuracy
+emoji-heavy,696,0.1334,0.7531,0.6207
+slang-heavy,60,0.1315,0.7482,0.6167
+sarcasm,14,0.166,0.7196,0.7857
+formal,10398,0.1314,0.7234,0.592
