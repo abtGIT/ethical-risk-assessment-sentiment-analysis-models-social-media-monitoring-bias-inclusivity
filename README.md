@@ -54,15 +54,15 @@ cleaning removes the emoji that two of the criteria depend on.
 
 ```mermaid
 flowchart LR
-    RAW["Raw post"] --> C1{"Irony cue?"}
-    C1 -->|yes| SARC["sarcasm-indicated"]
-    C1 -->|no| C2{"Emoji density &gt; 0.05?"}
-    C2 -->|yes| EMO["emoji-heavy"]
-    C2 -->|no| C3{"Slang ratio &gt; 0.10?"}
-    C3 -->|yes| SLANG["slang-heavy"]
-    C3 -->|no| C4{"8+ words, no informal marker?"}
-    C4 -->|yes| FORM["formal - REFERENCE"]
-    C4 -->|no| OTHER["other - not analysed"]
+    RAW["Raw post"] --> C1{"Irony cue<br/>present?"}
+    C1 -- yes --> SARC["sarcasm-indicated"]
+    C1 -- no --> C2{"Emoji density<br/>above 0.05?"}
+    C2 -- yes --> EMO["emoji-heavy"]
+    C2 -- no --> C3{"Slang ratio<br/>above 0.10?"}
+    C3 -- yes --> SLANG["slang-heavy"]
+    C3 -- no --> C4{"At least 8 words,<br/>no informal marker?"}
+    C4 -- yes --> FORM["formal<br/>REFERENCE GROUP"]
+    C4 -- no --> OTHER["other<br/>not analysed"]
 ```
 
 ## The 25-experiment programme
@@ -97,17 +97,21 @@ model rather than separately refitted ones.
 
 ```mermaid
 flowchart LR
-    PREP["Prepared data"] --> E1["Exp 1-5<br/>baselines"] --> E6["Exp 6<br/>selection"]
-    E6 --> E7["Exp 7-9<br/>features"] --> E10["Exp 10<br/>final pipeline"]
-    E10 --> E11["Exp 11-14<br/>subgroups"] --> E15["Exp 15<br/>fairness gaps"]
+    PREP["Prepared data"] --> E1["Exp 1 to 5<br/>baselines"]
+    E1 --> E6["Exp 6<br/>selection"]
+    E6 --> E7["Exp 7 to 9<br/>features"]
+    E7 --> E10["Exp 10<br/>final pipeline"]
+    E10 --> E11["Exp 11 to 14<br/>subgroups"]
+    E11 --> E15["Exp 15<br/>fairness gaps"]
     E10 --> E16["Exp 16<br/>cross-dataset"]
     E15 --> E17["Exp 17<br/>XAI and risk"]
     E16 --> E17
-    E11 --> E21["Exp 21<br/>confidence"] --> E23["Exp 23<br/>taxonomy"]
+    E11 --> E21["Exp 21<br/>confidence"]
+    E21 --> E23["Exp 23<br/>taxonomy"]
     E15 --> E22["Exp 22<br/>drift"]
     E1 --> E24["Exp 24<br/>ensembles"]
-    E10 --> E25["Exp 25<br/>AUC, calibration"]
-    PREP --> E18["Exp 18-19<br/>interventions"]
+    E10 --> E25["Exp 25<br/>AUC and calibration"]
+    PREP --> E18["Exp 18 and 19<br/>interventions"]
     E10 --> E20["Exp 20<br/>dual framework"]
 ```
 
