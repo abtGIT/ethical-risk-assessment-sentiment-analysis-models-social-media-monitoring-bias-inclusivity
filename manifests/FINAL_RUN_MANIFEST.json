@@ -1,0 +1,44 @@
+{
+  "run_name": "LJMU_FINAL_LOCKED_RUN_2026",
+  "seed": 42,
+  "tweet_eval_role": "primary model development and held-out final evaluation",
+  "sentiment140_role": "binary external robustness condition",
+  "semeval_role": "domain/task-shift stress condition",
+  "sarcoji_role": "auxiliary proxy-validation/limitation evidence only",
+  "selection_policy": "train/validation/CV only; TweetEval test untouched until configuration lock",
+  "external_selection_policy": "external datasets never used for source model or feature selection",
+  "subgroup_freeze": {
+    "emoji_heavy": {
+      "formula": "emoji_count / word_count",
+      "operator": ">",
+      "threshold": 0.05
+    },
+    "slang_heavy": {
+      "formula": "slang_count / word_count",
+      "operator": ">",
+      "threshold": 0.1,
+      "lexicon": [
+        "lol", "lmao", "omg", "tbh", "imo", "imho", "wtf", "idk", "ngl", "smh", "af", "fr", "lowkey", "highkey", "slay", "lit", "goat", "vibe", "fire", "wanna", "gonna", "gotta", "kinda", "ur", "bruh", "bro", "fam", "dope", "sick", "sus", "bussin", "salty", "cap", "bet", "flex", "ghost", "clout", "woke", "ftw", "ftl", "epic", "fail", "rofl", "ttyl", "brb", "kk", "np", "nvm", "thx", "gr8", "b4"
+      ]
+    },
+    "sarcasm_indicated": {
+      "definition": "predefined surface-cue regex; not gold sarcasm",
+      "regex": "#(?:sarcasm|sarcastic|irony|ironic|notreally|jk|justjoking|suuure|riiight)|(?:yeah[,.]?\\s*right)|(?:as\\s*if)|(?:oh\\s*great)|(?:just\\s*what\\s*i\\s*needed)|(?:wow[,.]?\\s*thanks)|(?:totally[,!]+)|(?:sure[.]+)|(?:not\\s*at\\s*all)|(?:big\\s*surprise)|(?:great\\s*job\\s+ruining)|(?:not|never)\\s+(?:great|amazing|awesome|fantastic|brilliant|wonderful|perfect|lovely)"
+    },
+    "reference_unmarked": {
+      "definition": "no focal flag AND word_count >= 8",
+      "minimum_word_count": 8
+    },
+    "priority": [
+      "sarcasm-indicated",
+      "emoji-heavy",
+      "slang-heavy",
+      "reference-unmarked",
+      "other"
+    ],
+    "minimum_n_for_stable_quantitative_interpretation": 30,
+    "threshold_tuning_policy": "no threshold is changed after observing subgroup sizes"
+  },
+  "python": "3.13.15",
+  "sklearn": "1.6.1"
+}
