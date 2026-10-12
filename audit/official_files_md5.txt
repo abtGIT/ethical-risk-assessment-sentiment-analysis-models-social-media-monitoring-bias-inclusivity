@@ -1,0 +1,6 @@
+a66331ae98c43657182c05a405652f52  official_tweeteval_files/test_labels.txt
+44ff8b5fd7d100c2a9d7f2b9910a05de  official_tweeteval_files/test_text.txt
+a8b6c28ffb02680524245d2c037d482c  official_tweeteval_files/train_labels.txt
+5514307321b093cab2660dc7ffe311bc  official_tweeteval_files/train_text.txt
+a2fea02037f2a92865f7cc9a26703e68  official_tweeteval_files/val_labels.txt
+8c1d202d7f64638ee873dd8030b5f101  official_tweeteval_files/val_text.txt

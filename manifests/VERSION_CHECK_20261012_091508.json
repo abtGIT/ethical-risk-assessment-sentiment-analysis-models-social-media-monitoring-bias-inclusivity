@@ -1,0 +1,26 @@
+{
+  "run_utc": "20261012_091508",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "python": "3.13.16",
+  "matches_recorded_python": false,
+  "matches_recorded_sklearn": true,
+  "notebooks_scanned": [
+    "AUX_01_SarcOji_Proxy_Validation.ipynb",
+    "FINAL_00_Config_and_Freeze.ipynb",
+    "FINAL_00_Config_and_Freeze_FIXED.ipynb",
+    "FINAL_01_Data_Preparation_and_Subgroups.ipynb",
+    "FINAL_02_Model_Development_and_Lock.ipynb",
+    "FINAL_03_RQ1_Subgroup_Performance.ipynb",
+    "FINAL_04_RQ2_Disparity_Audit.ipynb",
+    "FINAL_05_RQ3_Errors_Confidence_XAI.ipynb",
+    "FINAL_06_RQ4_External_Robustness.ipynb",
+    "FINAL_06_v2_RQ4_External_Robustness.ipynb",
+    "FINAL_07_Ethical_Risk_Synthesis.ipynb"
+  ],
+  "install_commands_replayed": [
+    "-q emoji vaderSentiment pandas pyarrow scikit-learn scipy google-api-python-client",
+    "-q xgboost",
+    "-q fairlearn aif360",
+    "-q shap lime"
+  ]
+}
