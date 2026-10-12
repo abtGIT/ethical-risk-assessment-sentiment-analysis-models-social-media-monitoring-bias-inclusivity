@@ -53,6 +53,9 @@ audit/
  BEFORE_fig_5.3_as_in_V12_2_19.png
  AFTER_fig_5.3_in_V12_2_20.png
  redraw_fig_5_3.py
+
+archive/legacy-25-experiment/   superseded 25-experiment plan; provenance only (see its README)
+
 ```
 
 ## Research workflow
@@ -139,6 +142,8 @@ Run the core implementation notebooks in this order:
 `AUX_01_SarcOji_Proxy_Validation.ipynb` is auxiliary construct-validity/limitation evidence only; it does not tune or alter the frozen sarcasm-indicated rule.
 
 `FIGURES_Regenerate.ipynb` is run after FINAL_07 (see *Figure regeneration* below). It reads results; it does not change any of them.
+
+The `archive/legacy-25-experiment/` folder preserves the earlier 25-experiment plan for provenance only; none of its notebooks or results are used in the final thesis.
 
 ### Authoritative external-robustness notebooks
 
