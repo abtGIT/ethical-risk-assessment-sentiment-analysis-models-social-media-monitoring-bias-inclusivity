@@ -19,8 +19,6 @@ Implementation/
  FINAL_05_RQ3_Errors_Confidence_XAI.ipynb
  FINAL_06_v2_RQ4_External_Robustness.ipynb
  FINAL_07_Ethical_Risk_Synthesis.ipynb
- FINAL_06_v1_SUPERSEDED_legacy10k.ipynb
- FINAL_07_v1_SUPERSEDED_pre_v2_external.ipynb
  AUX_01_SarcOji_Proxy_Validation.ipynb
  FIGURES_Regenerate.ipynb
 
@@ -142,14 +140,9 @@ Run the core implementation notebooks in this order:
 
 `FIGURES_Regenerate.ipynb` is run after FINAL_07 (see *Figure regeneration* below). It reads results; it does not change any of them.
 
-### Superseded notebooks
+### Authoritative external-robustness notebooks
 
-The following notebooks are retained only for provenance and **must not be used as the final thesis implementation**:
-
-- `FINAL_06_v1_SUPERSEDED_legacy10k.ipynb` — superseded because it evaluated the earlier 10,000-row legacy Sentiment140 split.
-- `FINAL_07_v1_SUPERSEDED_pre_v2_external.ipynb` — superseded because its external-robustness synthesis consumed the legacy FINAL_06 outputs.
-
-The authoritative external-robustness implementation is `FINAL_06_v2_RQ4_External_Robustness.ipynb`, followed by the current `FINAL_07_Ethical_Risk_Synthesis.ipynb`.
+The repository's authoritative external-robustness implementation is `FINAL_06_v2_RQ4_External_Robustness.ipynb`, followed by the current `FINAL_07_Ethical_Risk_Synthesis.ipynb`. Earlier superseded FINAL_06/FINAL_07 variants are intentionally excluded from the active `Implementation/` folder so that the executable path cannot be confused with the final thesis run.
 
 FINAL_06 v2 evaluates the locked source model on the frozen EDA_03 v3 Sentiment140 sample: 100,000 unique-text rows (50,000 per class), with conflicting-label duplicate texts excluded. Linguistic subgroup tagging is performed on raw `text`, whereas model prediction uses leakage-controlled `text_eval` with source-like ASCII emoticons removed. FINAL_07 consumes those corrected outputs and includes the coverage-qualified Sentiment140 subgroup results in the external-robustness evidence row.
 
