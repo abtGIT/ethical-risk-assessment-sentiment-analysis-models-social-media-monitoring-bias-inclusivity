@@ -4,200 +4,222 @@ MSc thesis implementation repository for:
 
 **An Ethical Risk Assessment of Sentiment Analysis Models in Social Media Monitoring with a Focus on Bias, Inclusivity, and Misclassification Patterns**
 
-**Abhishek Tomar — Liverpool John Moores University — October 2026**
+Abhishek Tomar — Liverpool John Moores University — October 2026
 
-This repository is aligned to the final thesis submission candidate **V12.2.7**. The authoritative implementation is the frozen `FINAL_00`–`FINAL_07` notebook chain plus the shared utility module. Earlier 25-experiment material is retained only under `archive/legacy-25-experiment/` for provenance and must not be used as the final thesis implementation.
-
-## Final study design
-
-The final thesis uses **nine analytical stages**:
-
-1. protocol/configuration freeze;
-2. five-model common-representation comparison;
-3. feature comparison, tuning and final pipeline lock;
-4. one held-out TweetEval test evaluation;
-5. RQ1 linguistic-subgroup performance;
-6. RQ2 linguistic-disparity audit;
-7. RQ3 error, confidence/calibration and SHAP/LIME analysis;
-8. RQ4 external robustness;
-9. multi-dimensional ethical-risk evidence synthesis.
-
-Stages 2–8 are the empirical/evaluative core. Stages 1 and 9 are control and synthesis stages.
-
-## Authoritative final-run order
+## Repository structure
 
 ```text
 Implementation/
-  final_thesis_utils.py
-  FINAL_00_Config_and_Freeze.ipynb
-  FINAL_01_Data_Preparation_and_Subgroups.ipynb
-  FINAL_02_Model_Development_and_Lock.ipynb
-  FINAL_03_RQ1_Subgroup_Performance.ipynb
-  FINAL_04_RQ2_Disparity_Audit.ipynb
-  FINAL_05_RQ3_Errors_Confidence_XAI.ipynb
-  FINAL_06_v2_RQ4_External_Robustness.ipynb
-  FINAL_07_Ethical_Risk_Synthesis.ipynb
-  AUX_01_SarcOji_Proxy_Validation.ipynb
-```
+ final_thesis_utils.py
+ FINAL_00_Config_and_Freeze.ipynb
+ FINAL_01_Data_Preparation_and_Subgroups.ipynb
+ FINAL_02_Model_Development_and_Lock.ipynb
+ FINAL_03_RQ1_Subgroup_Performance.ipynb
+ FINAL_04_RQ2_Disparity_Audit.ipynb
+ FINAL_05_RQ3_Errors_Confidence_XAI.ipynb
+ FINAL_06_v2_RQ4_External_Robustness.ipynb
+ FINAL_07_Ethical_Risk_Synthesis.ipynb
+ FINAL_06_v1_SUPERSEDED_legacy10k.ipynb
+ FINAL_07_v1_SUPERSEDED_pre_v2_external.ipynb
+ AUX_01_SarcOji_Proxy_Validation.ipynb
+ FIGURES_Regenerate.ipynb
 
-`AUX_01` is auxiliary construct-validity/limitation evidence only. It does not alter the frozen sarcasm-indicated rule, model selection, features or thresholds.
-
-## Supporting EDA
-
-```text
 EDA/
-  EDA_01_TweetEval_FINAL_v2.ipynb
-  EDA_02_SemEval2014_FINAL_v2.ipynb
-  EDA_03_Sentiment140_FINAL_v3.ipynb
-  EDA_04_CrossDataset_FINAL_v2.ipynb
-  EDA_05_SarcOji_ScopeGate_v1.ipynb
+ EDA_01_TweetEval_FINAL_v2.ipynb
+ EDA_02_SemEval2014_FINAL_v2.ipynb
+ EDA_03_Sentiment140_FINAL_v3.ipynb
+ EDA_04_CrossDataset_FINAL_v2.ipynb
+ EDA_05_SarcOji_ScopeGate_v1.ipynb
+
+manifests/
+ FINAL_RUN_MANIFEST.json
+ SUBGROUP_FREEZE_CONFIG.json
+ VERSION_CHECK_Table_4_1.ipynb
+ VERSION_CHECK_20261012_091508.csv
+ VERSION_CHECK_20261012_091508.json
+
+figures/
+ Fig3_6_class_distribution.png      Fig5_1_baseline_validation.png
+ Fig3_7_post_length.png             Fig5_2_subgroup_macro_f1.png
+ Fig3_8_markers.png                 Fig5_3_cpd.png
+ FIGURE_VALUES.csv                  Fig5_4_error_directions.png
+                                    Fig5_5_hcer_ece.png
+                                    Fig5_6_cross_dataset.png
+
+audit/
+ Figure_Audit_Report.md
+ comparison.md
+ recompute_tweeteval.py
+ recompute_output.log
+ official_files_md5.txt
+ BEFORE_fig_5.3_as_in_V12_2_19.png
+ AFTER_fig_5.3_in_V12_2_20.png
+ redraw_fig_5_3.py
 ```
 
-These notebooks document exploratory/data-integrity work and the frozen external-dataset roles. They are supporting records, not a separate experimental chain.
+## Research workflow
+
+```mermaid
+flowchart LR
+ EDA["EDA 01–05<br/>Exploration and validation"]
+ F00["FINAL 00<br/>Configuration and Freeze"]
+ F01["FINAL 01<br/>Data Preparation and Subgroups"]
+ F02["FINAL 02<br/>Model Development and Final Selection"]
+ RQ1["FINAL 03<br/>RQ1 Subgroup Performance"]
+ RQ2["FINAL 04<br/>RQ2 Disparity Audit"]
+ RQ3["FINAL 05<br/>RQ3 Errors, Confidence and XAI"]
+ RQ4["FINAL 06<br/>RQ4 External Robustness"]
+ SYN["FINAL 07<br/>Multi-Dimensional Ethical-Risk Synthesis"]
+
+ EDA --> F00
+ F00 --> F01
+ F01 --> F02
+ F02 --> RQ1
+ F02 --> RQ2
+ F02 --> RQ3
+ F02 --> RQ4
+ RQ1 --> SYN
+ RQ2 --> SYN
+ RQ3 --> SYN
+ RQ4 --> SYN
+```
+
+## Final notebook dependency chain
+
+```mermaid
+flowchart TD
+ U["final_thesis_utils.py"] --> F00["FINAL 00<br/>Freeze configuration"]
+ F00 --> F01["FINAL 01<br/>Prepare data and assign subgroups"]
+ F01 --> F02["FINAL 02<br/>Develop, calibrate and lock final pipeline"]
+
+ F02 --> F03["FINAL 03<br/>RQ1 subgroup performance"]
+ F02 --> F04["FINAL 04<br/>RQ2 disparity audit"]
+ F02 --> F05["FINAL 05<br/>RQ3 errors, confidence and XAI"]
+ F02 --> F06["FINAL 06<br/>RQ4 external robustness"]
+
+ F03 --> F07["FINAL 07<br/>Ethical-risk evidence synthesis"]
+ F04 --> F07
+ F05 --> F07
+ F06 --> F07
+
+ F00 -. frozen proxy rules .-> AUX["AUX 01<br/>SarcOji proxy validation"]
+ AUX -. auxiliary limitation evidence .-> F07
+```
 
 ## Dataset roles
 
-| Dataset | Final role |
-|---|---|
-| **TweetEval** | Primary model development, validation-based selection and one held-out final test evaluation |
-| **Sentiment140** | Binary external-robustness condition; frozen 100,000-row balanced unique-text sample |
-| **SemEval-2014 Task 4** | Domain/task-shift stress condition; not clean same-task validation |
-| **SarcOji** | Auxiliary validation/limitation evidence for the frozen sarcasm-indicated surface-cue proxy only |
+```mermaid
+flowchart LR
+ TW["TweetEval"] --> DEV["Model development<br/>train/validation/CV only"]
+ TW --> TEST["One held-out final test evaluation"]
 
-## Frozen linguistic groups
+ SE["SemEval-2014 Task 4"] --> EXT1["Three-class domain/task-shift stress condition"]
+ S140["Sentiment140"] --> EXT2["Binary external-robustness condition"]
+ SO["SarcOji"] --> AUXV["Auxiliary validation of the frozen sarcasm-indicated proxy"]
 
-Priority order:
+ DEV --> LOCK["Locked final pipeline"]
+ LOCK --> TEST
+ LOCK --> EXT1
+ LOCK --> EXT2
 
-`sarcasm-indicated → emoji-heavy → slang-heavy → reference-unmarked → other`
+ AUXV -. no threshold or model retuning .-> LOCK
+```
 
-Key rules:
+## Authoritative final-run order
 
-- emoji-heavy: emoji density > 0.05;
-- slang-heavy: slang ratio > 0.10 using the frozen 51-term lexicon;
-- sarcasm-indicated: predefined surface-cue regex; **not gold sarcasm**;
-- reference-unmarked: no focal flag and word count ≥ 8;
-- stable quantitative interpretation requires **N ≥ 30**.
+Run the core implementation notebooks in this order:
 
-The final reference group is **reference-unmarked**, not the superseded `formal` label.
+1. `FINAL_00_Config_and_Freeze.ipynb`
+2. `FINAL_01_Data_Preparation_and_Subgroups.ipynb`
+3. `FINAL_02_Model_Development_and_Lock.ipynb`
+4. `FINAL_03_RQ1_Subgroup_Performance.ipynb`
+5. `FINAL_04_RQ2_Disparity_Audit.ipynb`
+6. `FINAL_05_RQ3_Errors_Confidence_XAI.ipynb`
+7. `FINAL_06_v2_RQ4_External_Robustness.ipynb`
+8. `FINAL_07_Ethical_Risk_Synthesis.ipynb`
 
-## Locked headline results
+`AUX_01_SarcOji_Proxy_Validation.ipynb` is auxiliary construct-validity/limitation evidence only; it does not tune or alter the frozen sarcasm-indicated rule.
 
-### Held-out TweetEval
+`FIGURES_Regenerate.ipynb` is run after FINAL_07 (see *Figure regeneration* below). It reads results; it does not change any of them.
 
-- Accuracy: **0.6214**
-- Macro F1: **0.6053**
-- Test N: **12,284**
-- Total errors: **4,651**
+### Superseded notebooks
 
-### RQ1 subgroup performance
+The following notebooks are retained only for provenance and **must not be used as the final thesis implementation**:
 
-| Subgroup | N | Macro F1 | Interpretation |
-|---|---:|---:|---|
-| Emoji-heavy | 710 | 0.6354 | Stable |
-| Slang-heavy | 60 | 0.6194 | Stable |
-| Reference-unmarked | 10,388 | 0.5969 | Stable reference |
-| Other | 1,112 | 0.5915 | Residual |
-| Sarcasm-indicated | 14 | 0.7897 | Exploratory only |
+- `FINAL_06_v1_SUPERSEDED_legacy10k.ipynb` — superseded because it evaluated the earlier 10,000-row legacy Sentiment140 split.
+- `FINAL_07_v1_SUPERSEDED_pre_v2_external.ipynb` — superseded because its external-robustness synthesis consumed the legacy FINAL_06 outputs.
 
-### RQ2 disparity
+The authoritative external-robustness implementation is `FINAL_06_v2_RQ4_External_Robustness.ipynb`, followed by the current `FINAL_07_Ethical_Risk_Synthesis.ipynb`.
 
-The final study reports:
+FINAL_06 v2 evaluates the locked source model on the frozen EDA_03 v3 Sentiment140 sample: 100,000 unique-text rows (50,000 per class), with conflicting-label duplicate texts excluded. Linguistic subgroup tagging is performed on raw `text`, whereas model prediction uses leakage-controlled `text_eval` with source-like ASCII emoticons removed. FINAL_07 consumes those corrected outputs and includes the coverage-qualified Sentiment140 subgroup results in the external-robustness evidence row.
 
-- **Correctness Parity Difference (CPD)**
-- **Correctness Rate Ratio (CRR)**
-- one-vs-rest class-conditional **TPR/FPR gaps**
+The EDA notebooks are supporting exploratory/data-validation records and are not part of the authoritative FINAL_00–FINAL_07 dependency chain.
 
-These are descriptive linguistic-group outcome disparities. They are **not** demographic statistical-parity/disparate-impact claims and do not produce a universal fair/unfair label.
+## Dataset roles and interpretation boundaries
 
-### RQ3 error / reliability / XAI
-
-- negative → neutral: **1,755 errors (37.73%)**
-- neutral → positive: **1,040**
-- positive → neutral: **730**
-- neutral → negative: **684**
-- negative → positive: **374**
-- positive → negative: **68**
-- SHAP/LIME specific-cue mean Jaccard: **0.5269**
-- explanation sample: **N = 33**
-- SHAP/LIME interpretation is local/descriptive, not causal.
-
-### RQ4 external robustness
-
-**Sentiment140**
-
-- frozen target N: **100,000**
-- Accuracy: **0.4913**
-- Macro F1: **0.5804**
-- matched-source Macro F1: **0.6778**
-- Δ Macro F1: **−0.0974**
-- neutral prediction rate: **0.3353**
-- emoji-heavy external subgroup: N=72, Macro F1=0.3690, gap vs reference **−0.2123**
-
-**SemEval-2014**
-
-- aspect rows: **1,758**
-- unique sentences: **1,011**
-- Accuracy: **0.6485**
-- Macro F1: **0.5736**
-- Δ Macro F1 vs TweetEval source: **−0.0318**
+- **TweetEval:** primary dataset for model development, validation-based selection and one held-out final test evaluation.
+- **Sentiment140:** binary external-robustness condition. The locked three-class source pipeline is unchanged; neutral predictions are retained as errors.
+- **SemEval-2014 Task 4:** three-class domain/task-shift stress condition, not clean same-task validation.
+- **SarcOji:** auxiliary validation of the frozen sarcasm-indicated surface-cue proxy only.
 
 ## Reproducibility controls
 
-- random seed: **42**
-- Python: **3.13.15**
-- scikit-learn: **1.6.1**
-- TweetEval test excluded from model-family, feature and hyperparameter selection;
-- external datasets never used for source-model selection or retuning;
-- subgroup thresholds frozen before final evaluation;
-- no total ethical-risk score, low/medium/high risk category or overall model ranking.
+- Random seed: `42`.
+- TweetEval test data is excluded from model-family, feature and hyperparameter selection.
+- External datasets are not used for source-model selection or retuning.
+- Linguistic subgroup rules are frozen before final evaluation.
+- Stable subgroup interpretation requires `N >= 30`; smaller groups remain exploratory/descriptive.
+- `reference-unmarked` is an operational comparison group, not a demographic or protected-class baseline.
+- CPD/CRR are study-specific correctness-parity descriptors; they are not presented as demographic statistical parity/disparate impact.
+- SHAP/LIME evidence is local and descriptive, not causal.
+- The ethical-risk synthesis remains multi-dimensional; no total risk score, low/medium/high category or overall model ranking is created.
 
-Locked fingerprints:
+The exact freeze values are recorded in `manifests/SUBGROUP_FREEZE_CONFIG.json`, and the executed run metadata is recorded in `manifests/FINAL_RUN_MANIFEST.json`.
 
-- final model SHA-256: `bf92c6162dd4664c4a3445d8ce806cc28b09809f75613d6c70f4ef8b6ad954e2`
-- frozen Sentiment140 artefact SHA-256: `d25327ccb390945e945f687c38f84e3973e81199c7b7977f02d1f5a08593b8ed`
+## Figure regeneration
 
-See `manifests/` for the final run manifest and subgroup freeze configuration.
+`Implementation/FIGURES_Regenerate.ipynb` redraws the thesis **data charts** — Figures 3.6, 3.7, 3.8 and 5.1 to 5.6 — from the locked outputs:
 
-## Evidence workbook
+- inputs (read-only): `LJMU_FINAL_EXPERIMENT_RUN/data/tweeteval_*_final.parquet` and `LJMU_FINAL_EXPERIMENT_RUN/results/*.csv`; Figure 3.8 also loads the frozen tagger from `final_thesis_utils.py`;
+- outputs: the nine PNGs and `FIGURE_VALUES.csv` in `figures/`. The CSV lists all 63 plotted values, so every number in a chart can be compared with the result table it came from.
 
-The thesis-aligned evidence workbook is maintained separately as:
+The copy stored here is the executed notebook (outputs included). Figure 5.3 was redrawn from the full-precision FINAL_04 values after two of its labels were found to be double-rounded (see `audit/`).
 
-**Abhishek_Tomar_Thesis_FINAL_Evidence_Workbook.xlsx**
+The thesis also contains conceptual diagrams (workflows, frameworks, pipelines). They show no measured data and are not generated by code. Figure 3.4 (sample records) is an image of eight records from the official TweetEval test split; it was verified against the official files, as described in `audit/`.
 
-Drive copy:
-https://docs.google.com/spreadsheets/d/1RwNHZ9TZmWnmG-Ihm1xjD7AGZVl6pg7l/edit?usp=drivesdk
+## Version record
 
-It maps the final nine-stage design, RQs, notebooks, thesis tables, locked results and the original 25-experiment plan to the final methodology.
+`manifests/VERSION_CHECK_Table_4_1.ipynb` extracts the `pip install` commands from the final notebooks, re-runs them in a fresh Colab runtime and records the resulting library versions (`VERSION_CHECK_20261012_091508.csv` and `.json`). These are the versions reported in Table 4.1 of the thesis.
 
-## Repository layout
+Python 3.13.15 and scikit-learn 1.6.1 come from the original run manifest. The verification runtime reproduced scikit-learn 1.6.1 but reported Python 3.13.16, a later patch release. The remaining versions were not captured at the time of the original run (the notebooks installed packages with `pip -q`), so they document the reconstructed environment, not a byte-identical record of the original one.
+
+## Audit
+
+`audit/` records how the thesis figures were checked:
+
+- `recompute_tweeteval.py`, `recompute_output.log` and `official_files_md5.txt` recompute the Chapter 3 statistics from the official TweetEval release (cardiffnlp/tweeteval, `datasets/sentiment`);
+- `comparison.md` compares the Chapter 5 figures with the saved cell outputs of the locked notebooks;
+- `BEFORE_fig_5.3_as_in_V12_2_19.png`, `AFTER_fig_5.3_in_V12_2_20.png` and `redraw_fig_5_3.py` document the Figure 5.3 correction;
+- `Figure_Audit_Report.md` summarises the result for every data figure.
+
+## Execution environment and paths
+
+The notebooks were executed in Google Colab with Google Drive persistence. The executed final run writes artefacts beneath:
 
 ```text
-Implementation/               authoritative final-run notebooks
-EDA/                          supporting exploratory/data-integrity notebooks
-manifests/                    frozen run and subgroup configuration
-archive/legacy-25-experiment/ superseded original implementation and old README-era figures
-README.md                     this file
+/content/drive/MyDrive/LJMU_FINAL_EXPERIMENT_RUN/
+ data/
+ models/
+ predictions/
+ results/
+ figures/
+ manifests/
 ```
 
-## Legacy archive
+The notebooks also contain the Drive file ID used to retrieve `final_thesis_utils.py` during the original Colab run. A reproducer using a different Drive layout should change the utility-loading step and/or `RUN_ROOT` while preserving the frozen methodological configuration.
 
-The original repository was built around a **25-experiment** plan containing items such as a `formal` subgroup, SPD/DIR-oriented fairness framing, imbalance intervention, ensemble weighting and older external-robustness outputs.
+## Expected outputs
 
-Those files are retained only under:
+The final run saves prepared data, the locked model, prediction artefacts, result tables, figures and manifests. Key externally reported outputs include the TweetEval held-out predictions, RQ1 subgroup results, five-model RQ2 disparity results, RQ3 error/confidence/XAI outputs, and RQ4 Sentiment140/SemEval robustness tables.
 
-`archive/legacy-25-experiment/`
-
-They are useful for provenance but **must not be cited or executed as the authoritative final thesis implementation**.
-
-## Interpretation boundaries
-
-This repository does **not** claim:
-
-- demographic fairness guarantees;
-- causal explanations from SHAP/LIME;
-- universal cross-domain fairness;
-- a single ethical-risk score;
-- an overall model ranking;
-- gold-standard sarcasm detection from the surface-cue proxy.
-
-The final thesis instead reports a traceable, multi-dimensional evidence profile with explicit limitations and coverage conditions.
+This repository documents the thesis implementation and reproducibility logic. It does not include a claim of universal cross-domain fairness, demographic harm, causal explanation, or a single ethical-risk score.

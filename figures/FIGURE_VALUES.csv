@@ -1,0 +1,64 @@
+figure,item,value
+3.6,train Negative,7093 (15.55%)
+3.6,validation Negative,312 (15.60%)
+3.6,test Negative,3972 (32.33%)
+3.6,train Neutral,20673 (45.32%)
+3.6,validation Neutral,869 (43.45%)
+3.6,test Neutral,5937 (48.33%)
+3.6,train Positive,17849 (39.13%)
+3.6,validation Positive,819 (40.95%)
+3.6,test Positive,2375 (19.33%)
+3.7,mean words train,19.24
+3.7,mean words test,14.86
+3.7,pooled Negative Q1/med/Q3,"[16.0, 20.0, 23.0]"
+3.7,pooled Neutral Q1/med/Q3,"[14.0, 18.0, 22.0]"
+3.7,pooled Positive Q1/med/Q3,"[15.0, 19.0, 22.0]"
+3.8,train emoji %,0.0
+3.8,train slang %,7.14
+3.8,train sarcasm %,0.21
+3.8,validation emoji %,0.0
+3.8,validation slang %,8.2
+3.8,validation sarcasm %,0.15
+3.8,test emoji %,6.59
+3.8,test slang %,4.04
+3.8,test sarcasm %,0.11
+5.1,LinearSVM,acc 0.686000 / macroF1 0.646191
+5.1,LogisticRegression,acc 0.670500 / macroF1 0.609972
+5.1,XGBoost,acc 0.656000 / macroF1 0.596196
+5.1,MultinomialNB,acc 0.626000 / macroF1 0.577419
+5.1,RandomForest,acc 0.620000 / macroF1 0.511543
+5.2,reference-unmarked,"0.596926 [0.587504, 0.606141] N=10388"
+5.2,emoji-heavy,"0.635388 [0.598448, 0.672985] N=710"
+5.2,slang-heavy,"0.619431 [0.498602, 0.731746] N=60"
+5.2,sarcasm-indicated,"0.789744 [0.475308, 1.000000] N=14"
+5.3,LogisticRegression emoji-heavy,0.016052
+5.3,LinearSVM emoji-heavy,0.010134
+5.3,MultinomialNB emoji-heavy,0.025137
+5.3,RandomForest emoji-heavy,0.005815
+5.3,XGBoost emoji-heavy,-0.014482
+5.3,LogisticRegression slang-heavy,0.143987
+5.3,LinearSVM slang-heavy,0.115768
+5.3,MultinomialNB slang-heavy,0.00448
+5.3,RandomForest slang-heavy,0.052529
+5.3,XGBoost slang-heavy,0.058523
+5.3,LogisticRegression sarcasm-indicated,-0.07268
+5.3,LinearSVM sarcasm-indicated,-0.012803
+5.3,MultinomialNB sarcasm-indicated,0.009241
+5.3,RandomForest sarcasm-indicated,-0.030805
+5.3,XGBoost sarcasm-indicated,-0.058144
+5.4,positive -> negative,68 (1.4621%)
+5.4,negative -> positive,374 (8.0413%)
+5.4,neutral -> negative,684 (14.7065%)
+5.4,positive -> neutral,730 (15.6955%)
+5.4,neutral -> positive,1040 (22.3608%)
+5.4,negative -> neutral,1755 (37.7338%)
+5.5,HCER reference-unmarked,0.145677
+5.5,HCER emoji-heavy,0.198381
+5.5,HCER slang-heavy,0.173913
+5.5,HCER sarcasm-indicated,0.0
+5.5,ECE reference-unmarked,0.007797
+5.5,ECE emoji-heavy,0.051766
+5.5,ECE slang-heavy,0.104879
+5.5,ECE sarcasm-indicated,0.179006
+5.6,SemEval-2014,source 0.605315 target 0.573551 delta -0.031763
+5.6,Sentiment140,source 0.677816 target 0.580373 delta -0.097442

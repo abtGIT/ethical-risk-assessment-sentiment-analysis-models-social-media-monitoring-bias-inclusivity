@@ -1,0 +1,29 @@
+FIGURE 3.6 class counts and shares
+  train N= 45615 [('negative', 7093, 15.55), ('neutral', 20673, 45.32), ('positive', 17849, 39.13)]
+  val   N=  2000 [('negative', 312, 15.6), ('neutral', 869, 43.45), ('positive', 819, 40.95)]
+  test  N= 12284 [('negative', 3972, 32.33), ('neutral', 5937, 48.33), ('positive', 2375, 19.33)]
+FIGURE 3.7 mean whitespace words per post
+  train 19.24
+  val   19.44
+  test  14.86
+FIGURE 3.7 right panel, quartiles/median/whiskers by class, ALL SPLITS POOLED
+  negative Q1 16 median 20 Q3 23 whiskers 6-33
+  neutral  Q1 14 median 18 Q3 22 whiskers 2-33
+  positive Q1 15 median 19 Q3 22 whiskers 5-32
+FIGURE 3.8 emoji-bearing posts (emoji library)
+  train 0 (0.00%)
+  val   0 (0.00%)
+  test  809 (6.59%)
+FIGURE 3.8 any slang-lexicon term (51-term frozen lexicon, simple tokeniser - approximation of frozen tagger)
+  train 3257 (7.14%)
+  val   163 (8.15%)
+  test  493 (4.01%)
+FIGURE 3.4 sample records found in official test split
+  FOUND line 783 label 2 (figure label 2) :: Westworld.Damn.There is life after Game of Thrones
+  FOUND line 5184 label 1 (figure label 1) :: The Rocket Richard race or the Cy Young race?  #NH
+  FOUND line 10719 label 0 (figure label 0) :: 8 is the reason I'm a Linux user.
+  FOUND line 878 label 2 (figure label 2) :: Tonight feels like a coffee cake kinda night. Let'
+  FOUND line 3098 label 1 (figure label 1) :: Selfie Stick, Extendable Monopod with Bluetooth Re
+  FOUND line 4976 label 0 (figure label 0) :: This...is upsetting and a manipulative way of dive
+  FOUND line 3893 label 2 (figure label 2) :: Going to see #FantasticBeasts and I am LIT
+  FOUND line 2702 label 1 (figure label 1) :: Like Grayson Allen, Adam is now operating at 50 pe
