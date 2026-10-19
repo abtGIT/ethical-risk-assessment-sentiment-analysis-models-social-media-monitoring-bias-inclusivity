@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-19T04:43:46.981812</dc:date>
+    <dc:date>2026-10-19T17:12:13.981826</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -32,93 +32,93 @@ z
    <g id="patch_2">
     <path d="M 42.91625 205.18625 
 L 427.86 205.18625 
-L 427.86 25.98 
-L 42.91625 25.98 
+L 427.86 63.7432 
+L 42.91625 63.7432 
 z
 " style="fill: #ffffff"/>
    </g>
    <g id="patch_3">
     <path d="M 60.413693 205.18625 
 L 94.038673 205.18625 
-L 94.038673 158.742831 
-L 60.413693 158.742831 
+L 94.038673 168.529611 
+L 60.413693 168.529611 
 z
-" clip-path="url(#p7015d2b9f1)" style="fill: #f4c2c2; stroke: #a33a3a; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#pccaeaf28e4)" style="fill: #f4c2c2; stroke: #a33a3a; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 184.950655 205.18625 
 L 218.575635 205.18625 
-L 218.575635 158.592625 
-L 184.950655 158.592625 
+L 218.575635 168.411057 
+L 184.950655 168.411057 
 z
-" clip-path="url(#p7015d2b9f1)" style="fill: #f4c2c2; stroke: #a33a3a; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#pccaeaf28e4)" style="fill: #f4c2c2; stroke: #a33a3a; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 309.487617 205.18625 
 L 343.112597 205.18625 
-L 343.112597 108.609779 
-L 309.487617 108.609779 
+L 343.112597 128.960836 
+L 309.487617 128.960836 
 z
-" clip-path="url(#p7015d2b9f1)" style="fill: #f4c2c2; stroke: #a33a3a; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#pccaeaf28e4)" style="fill: #f4c2c2; stroke: #a33a3a; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 94.038673 205.18625 
 L 127.663653 205.18625 
-L 127.663653 69.823949 
-L 94.038673 69.823949 
+L 127.663653 98.348142 
+L 94.038673 98.348142 
 z
-" clip-path="url(#p7015d2b9f1)" style="fill: #dddddd; stroke: #6e6e6e; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#pccaeaf28e4)" style="fill: #dddddd; stroke: #6e6e6e; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 218.575635 205.18625 
 L 252.200615 205.18625 
-L 252.200615 75.411057 
-L 218.575635 75.411057 
+L 252.200615 102.757908 
+L 218.575635 102.757908 
 z
-" clip-path="url(#p7015d2b9f1)" style="fill: #dddddd; stroke: #6e6e6e; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#pccaeaf28e4)" style="fill: #dddddd; stroke: #6e6e6e; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
     <path d="M 343.112597 205.18625 
 L 376.737577 205.18625 
-L 376.737577 60.832144 
-L 343.112597 60.832144 
+L 376.737577 91.251133 
+L 343.112597 91.251133 
 z
-" clip-path="url(#p7015d2b9f1)" style="fill: #dddddd; stroke: #6e6e6e; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#pccaeaf28e4)" style="fill: #dddddd; stroke: #6e6e6e; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
     <path d="M 127.663653 205.18625 
 L 161.288633 205.18625 
-L 161.288633 88.314886 
-L 127.663653 88.314886 
+L 161.288633 112.94258 
+L 127.663653 112.94258 
 z
-" clip-path="url(#p7015d2b9f1)" style="fill: #c4e3d9; stroke: #2e7d6e; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#pccaeaf28e4)" style="fill: #c4e3d9; stroke: #2e7d6e; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_10">
     <path d="M 252.200615 205.18625 
 L 285.825595 205.18625 
-L 285.825595 82.877984 
-L 252.200615 82.877984 
+L 285.825595 108.651368 
+L 252.200615 108.651368 
 z
-" clip-path="url(#p7015d2b9f1)" style="fill: #c4e3d9; stroke: #2e7d6e; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#pccaeaf28e4)" style="fill: #c4e3d9; stroke: #2e7d6e; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="patch_11">
     <path d="M 376.737577 205.18625 
 L 410.362557 205.18625 
-L 410.362557 147.439745 
-L 376.737577 147.439745 
+L 410.362557 159.608365 
+L 376.737577 159.608365 
 z
-" clip-path="url(#p7015d2b9f1)" style="fill: #c4e3d9; stroke: #2e7d6e; stroke-width: 0.9; stroke-linejoin: miter"/>
+" clip-path="url(#pccaeaf28e4)" style="fill: #c4e3d9; stroke: #2e7d6e; stroke-width: 0.9; stroke-linejoin: miter"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="md94ec04d2e" d="M 0 0 
+       <path id="mc03236c0ef" d="M 0 0 
 L 0 3.5 
 " style="stroke: #1a1a1a; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#md94ec04d2e" x="110.851163" y="205.18625" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
+       <use xlink:href="#mc03236c0ef" x="110.851163" y="205.18625" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
@@ -129,7 +129,7 @@ L 0 3.5
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#md94ec04d2e" x="235.388125" y="205.18625" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
+       <use xlink:href="#mc03236c0ef" x="235.388125" y="205.18625" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
@@ -140,7 +140,7 @@ L 0 3.5
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#md94ec04d2e" x="359.925087" y="205.18625" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
+       <use xlink:href="#mc03236c0ef" x="359.925087" y="205.18625" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
@@ -153,12 +153,12 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_4">
       <defs>
-       <path id="m6c44b83be1" d="M 0 0 
+       <path id="m4078dbe098" d="M 0 0 
 L -3.5 0 
 " style="stroke: #1a1a1a; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m6c44b83be1" x="42.91625" y="205.18625" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
+       <use xlink:href="#m4078dbe098" x="42.91625" y="205.18625" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
@@ -168,70 +168,70 @@ L -3.5 0
     <g id="ytick_2">
      <g id="line2d_5">
       <g>
-       <use xlink:href="#m6c44b83be1" x="42.91625" y="175.318542" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
+       <use xlink:href="#m4078dbe098" x="42.91625" y="181.612408" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
-      <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: end; fill: #1a1a1a" x="35.91625" y="178.961549" transform="rotate(-0 35.91625 178.961549)">10</text>
+      <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: end; fill: #1a1a1a" x="35.91625" y="185.255416" transform="rotate(-0 35.91625 185.255416)">10</text>
      </g>
     </g>
     <g id="ytick_3">
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m6c44b83be1" x="42.91625" y="145.450833" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
+       <use xlink:href="#m4078dbe098" x="42.91625" y="158.038567" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_6">
-      <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: end; fill: #1a1a1a" x="35.91625" y="149.093841" transform="rotate(-0 35.91625 149.093841)">20</text>
+      <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: end; fill: #1a1a1a" x="35.91625" y="161.681574" transform="rotate(-0 35.91625 161.681574)">20</text>
      </g>
     </g>
     <g id="ytick_4">
      <g id="line2d_7">
       <g>
-       <use xlink:href="#m6c44b83be1" x="42.91625" y="115.583125" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
+       <use xlink:href="#m4078dbe098" x="42.91625" y="134.464725" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_7">
-      <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: end; fill: #1a1a1a" x="35.91625" y="119.226133" transform="rotate(-0 35.91625 119.226133)">30</text>
+      <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: end; fill: #1a1a1a" x="35.91625" y="138.107733" transform="rotate(-0 35.91625 138.107733)">30</text>
      </g>
     </g>
     <g id="ytick_5">
      <g id="line2d_8">
       <g>
-       <use xlink:href="#m6c44b83be1" x="42.91625" y="85.715417" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
+       <use xlink:href="#m4078dbe098" x="42.91625" y="110.890883" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_8">
-      <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: end; fill: #1a1a1a" x="35.91625" y="89.358424" transform="rotate(-0 35.91625 89.358424)">40</text>
+      <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: end; fill: #1a1a1a" x="35.91625" y="114.533891" transform="rotate(-0 35.91625 114.533891)">40</text>
      </g>
     </g>
     <g id="ytick_6">
      <g id="line2d_9">
       <g>
-       <use xlink:href="#m6c44b83be1" x="42.91625" y="55.847708" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
+       <use xlink:href="#m4078dbe098" x="42.91625" y="87.317042" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_9">
-      <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: end; fill: #1a1a1a" x="35.91625" y="59.490716" transform="rotate(-0 35.91625 59.490716)">50</text>
+      <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: end; fill: #1a1a1a" x="35.91625" y="90.960049" transform="rotate(-0 35.91625 90.960049)">50</text>
      </g>
     </g>
     <g id="ytick_7">
      <g id="line2d_10">
       <g>
-       <use xlink:href="#m6c44b83be1" x="42.91625" y="25.98" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
+       <use xlink:href="#m4078dbe098" x="42.91625" y="63.7432" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_10">
-      <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: end; fill: #1a1a1a" x="35.91625" y="29.623008" transform="rotate(-0 35.91625 29.623008)">60</text>
+      <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: end; fill: #1a1a1a" x="35.91625" y="67.386208" transform="rotate(-0 35.91625 67.386208)">60</text>
      </g>
     </g>
     <g id="text_11">
-     <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: middle; fill: #1a1a1a" x="19.180078" y="115.583125" transform="rotate(-90 19.180078 115.583125)">Share of split (%)</text>
+     <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: middle; fill: #1a1a1a" x="19.180078" y="134.464725" transform="rotate(-90 19.180078 134.464725)">Share of split (%)</text>
     </g>
    </g>
    <g id="patch_12">
     <path d="M 42.91625 205.18625 
-L 42.91625 25.98 
+L 42.91625 63.7432 
 " style="fill: none; stroke: #333333; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_13">
@@ -240,84 +240,84 @@ L 427.86 205.18625
 " style="fill: none; stroke: #333333; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_12">
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(66.248566 145.655102)">15.5%</text>
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(64.833449 154.54318)">(7,093)</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(66.248566 152.831298)">15.5%</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(64.833449 161.719377)">(7,093)</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(190.785528 145.504896)">15.6%</text>
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(192.557911 154.392974)">(312)</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(190.785528 152.712744)">15.6%</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(192.557911 161.600823)">(312)</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(315.32249 95.522049)">32.3%</text>
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(313.907373 104.410128)">(3,972)</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(315.32249 113.262523)">32.3%</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(313.907373 122.150601)">(3,972)</text>
    </g>
    <g id="text_15">
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(99.873546 56.73622)">45.3%</text>
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(96.333428 65.624298)">(20,673)</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(99.873546 82.64983)">45.3%</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(96.333428 91.537908)">(20,673)</text>
    </g>
    <g id="text_16">
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(224.410508 62.323328)">43.5%</text>
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(226.182891 71.211406)">(869)</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(224.410508 87.059595)">43.5%</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(226.182891 95.947674)">(869)</text>
    </g>
    <g id="text_17">
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(348.94747 47.744414)">48.3%</text>
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(347.532353 56.632492)">(5,937)</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(348.94747 75.55282)">48.3%</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(347.532353 84.440898)">(5,937)</text>
    </g>
    <g id="text_18">
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(133.498525 75.227157)">39.1%</text>
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(129.958408 84.115235)">(17,849)</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(133.498525 97.244268)">39.1%</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(129.958408 106.132346)">(17,849)</text>
    </g>
    <g id="text_19">
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(258.035488 69.790255)">40.9%</text>
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(259.80787 78.678333)">(819)</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(258.035488 92.953056)">40.9%</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(259.80787 101.841134)">(819)</text>
    </g>
    <g id="text_20">
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(382.57245 134.352015)">19.3%</text>
-    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(381.157333 143.240094)">(2,375)</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(382.57245 143.910052)">19.3%</text>
+    <text style="font-size: 8.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; fill: #1a1a1a" transform="translate(381.157333 152.798131)">(2,375)</text>
    </g>
    <g id="text_21">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: middle; fill: #1a1a1a" x="235.388125" y="19.98" transform="rotate(-0 235.388125 19.98)">TweetEval Sentiment Class Distribution by Official Split</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: middle; fill: #1a1a1a" x="235.388125" y="29.7432" transform="rotate(-0 235.388125 29.7432)">TweetEval Sentiment Class Distribution by Official Split</text>
    </g>
    <g id="legend_1">
     <g id="patch_14">
-     <path d="M 184.986797 42.78 
-L 205.986797 42.78 
-L 205.986797 35.43 
-L 184.986797 35.43 
+     <path d="M 135.349609 52.286738 
+L 153.349609 52.286738 
+L 153.349609 45.986738 
+L 135.349609 45.986738 
 z
 " style="fill: #f4c2c2; stroke: #a33a3a; stroke-width: 0.9; stroke-linejoin: miter"/>
     </g>
     <g id="text_22">
-     <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: start; fill: #1a1a1a" x="214.386797" y="42.78" transform="rotate(-0 214.386797 42.78)">Negative</text>
+     <text style="font-size: 9px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: start; fill: #1a1a1a" x="160.549609" y="52.286738" transform="rotate(-0 160.549609 52.286738)">Negative</text>
     </g>
     <g id="patch_15">
-     <path d="M 273.286875 42.78 
-L 294.286875 42.78 
-L 294.286875 35.43 
-L 273.286875 35.43 
+     <path d="M 211.035391 52.286738 
+L 229.035391 52.286738 
+L 229.035391 45.986738 
+L 211.035391 45.986738 
 z
 " style="fill: #dddddd; stroke: #6e6e6e; stroke-width: 0.9; stroke-linejoin: miter"/>
     </g>
     <g id="text_23">
-     <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: start; fill: #1a1a1a" x="302.686875" y="42.78" transform="rotate(-0 302.686875 42.78)">Neutral</text>
+     <text style="font-size: 9px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: start; fill: #1a1a1a" x="236.235391" y="52.286738" transform="rotate(-0 236.235391 52.286738)">Neutral</text>
     </g>
     <g id="patch_16">
-     <path d="M 355.172109 42.78 
-L 376.172109 42.78 
-L 376.172109 35.43 
-L 355.172109 35.43 
+     <path d="M 281.222734 52.286738 
+L 299.222734 52.286738 
+L 299.222734 45.986738 
+L 281.222734 45.986738 
 z
 " style="fill: #c4e3d9; stroke: #2e7d6e; stroke-width: 0.9; stroke-linejoin: miter"/>
     </g>
     <g id="text_24">
-     <text style="font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: start; fill: #1a1a1a" x="384.572109" y="42.78" transform="rotate(-0 384.572109 42.78)">Positive</text>
+     <text style="font-size: 9px; font-family: 'Times New Roman', 'Liberation Serif', 'DejaVu Serif', serif; text-anchor: start; fill: #1a1a1a" x="306.422734" y="52.286738" transform="rotate(-0 306.422734 52.286738)">Positive</text>
     </g>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p7015d2b9f1">
-   <rect x="42.91625" y="25.98" width="384.94375" height="179.20625"/>
+  <clipPath id="pccaeaf28e4">
+   <rect x="42.91625" y="63.7432" width="384.94375" height="141.44305"/>
   </clipPath>
  </defs>
 </svg>
