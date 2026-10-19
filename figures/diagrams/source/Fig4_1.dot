@@ -1,0 +1,17 @@
+digraph G { rankdir=TB; bgcolor="white"; pad=0.15; nodesep=0.35; ranksep=0.45; newrank=true; 
+ node [shape=box, style="rounded,filled", fontname="Liberation Serif", fontsize=15, fontcolor="#1A1A1A", penwidth=1.3, margin="0.18,0.08"];
+ edge [color="#4A5563", penwidth=1.4, arrowsize=0.8, fontname="Liberation Serif", fontsize=13, fontcolor="#333333"];
+ u [label="final_thesis_utils.py\nfrozen rules · metrics · thresholds", fillcolor="#D6E4F2", color="#2F5C8A"];
+ f0 [label="FINAL_00\nconfiguration freeze and run manifest", fillcolor="#FBE7C2", color="#A8720F"];
+ aux [label="AUX_01\nSarcOji proxy validation (auxiliary)", fillcolor="#EDEDED", color="#8A8A8A"];
+ seq [label="FINAL_01 – FINAL_07\nexperiment sequence", fillcolor="#D3ECE6", color="#2E7D6E"];
+ fa [label="Frozen artefacts\npredictions · probabilities · metric CSV files", fillcolor="#E4E8EE", color="#5A6A7E"];
+ th [label="Thesis Chapters 5 and 6", fillcolor="#D6E4F2", color="#2F5C8A"];
+ u -> f0 [];
+ u -> aux [style=dashed];
+ f0 -> seq [];
+ seq -> fa [];
+ fa -> th [];
+ aux -> th [style=dashed];
+ {rank=same; f0; aux;}
+}

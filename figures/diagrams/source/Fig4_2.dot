@@ -1,0 +1,18 @@
+digraph G { rankdir=TB; bgcolor="white"; pad=0.15; nodesep=0.35; ranksep=0.45; newrank=true; 
+ node [shape=box, style="rounded,filled", fontname="Liberation Serif", fontsize=14, fontcolor="#1A1A1A", penwidth=1.3, margin="0.18,0.08"];
+ edge [color="#4A5563", penwidth=1.4, arrowsize=0.8, fontname="Liberation Serif", fontsize=12, fontcolor="#333333"];
+ o [label="Official TweetEval partitions\n45,615 / 2,000 / 12,284", fillcolor="#D6E4F2", color="#2F5C8A"];
+ cl [label="Conservative cleaning\nURLs and mentions removed", fillcolor="#E4E8EE", color="#5A6A7E"];
+ st [label="Subgroup tagging on raw text\nfrozen rules and precedence", fillcolor="#D3ECE6", color="#2E7D6E"];
+ v [label="Vectorisers and classifier fitted on\ndevelopment data only; refit on\ntrain + validation after lock", fillcolor="#FBE7C2", color="#A8720F"];
+ li [label="Locked model inference\non held-out test", fillcolor="#D6E4F2", color="#2F5C8A"];
+ pa [label="Prediction artefacts\ny_true · y_pred · probabilities\nconfidence · subgroup", fillcolor="#D3ECE6", color="#2E7D6E"];
+ c [label="Consumed by RQ1–RQ4\nwithout retraining", fillcolor="#FFFFFF", color="#7F8C9A"];
+ o -> cl [];
+ o -> st [];
+ cl -> v [];
+ v -> li [];
+ li -> pa [];
+ st -> pa [];
+ pa -> c [];
+}
