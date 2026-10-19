@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="439.2pt" height="298.08pt" viewBox="0 0 439.2 298.08" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-19T04:28:47.849560</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 298.08 
+L 439.2 298.08 
+L 439.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 5.76 27.36 
+L 426.24 27.36 
+L 426.24 48.96 
+L 5.76 48.96 
+z
+" clip-path="url(#pacab8647e6)" style="fill: #e8eef4; stroke: #9aa6b2; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 5.76 48.96 
+L 426.24 48.96 
+L 426.24 69.84 
+L 5.76 69.84 
+z
+" clip-path="url(#pacab8647e6)" style="fill: #ffffff; stroke: #c3ccd5; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 5.76 69.84 
+L 426.24 69.84 
+L 426.24 90.72 
+L 5.76 90.72 
+z
+" clip-path="url(#pacab8647e6)" style="fill: #ffffff; stroke: #c3ccd5; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 5.76 90.72 
+L 426.24 90.72 
+L 426.24 111.6 
+L 5.76 111.6 
+z
+" clip-path="url(#pacab8647e6)" style="fill: #ffffff; stroke: #c3ccd5; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 5.76 111.6 
+L 426.24 111.6 
+L 426.24 144.72 
+L 5.76 144.72 
+z
+" clip-path="url(#pacab8647e6)" style="fill: #ffffff; stroke: #c3ccd5; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 5.76 144.72 
+L 426.24 144.72 
+L 426.24 177.84 
+L 5.76 177.84 
+z
+" clip-path="url(#pacab8647e6)" style="fill: #ffffff; stroke: #c3ccd5; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 5.76 177.84 
+L 426.24 177.84 
+L 426.24 210.96 
+L 5.76 210.96 
+z
+" clip-path="url(#pacab8647e6)" style="fill: #ffffff; stroke: #c3ccd5; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 5.76 210.96 
+L 426.24 210.96 
+L 426.24 231.84 
+L 5.76 231.84 
+z
+" clip-path="url(#pacab8647e6)" style="fill: #ffffff; stroke: #c3ccd5; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 5.76 231.84 
+L 426.24 231.84 
+L 426.24 252.72 
+L 5.76 252.72 
+z
+" clip-path="url(#pacab8647e6)" style="fill: #ffffff; stroke: #c3ccd5; stroke-width: 0.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 320.4 27.36 
+L 320.4 252.72 
+" clip-path="url(#pacab8647e6)" style="fill: none; stroke: #c3ccd5; stroke-width: 0.7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 363.6 27.36 
+L 363.6 252.72 
+" clip-path="url(#pacab8647e6)" style="fill: none; stroke: #c3ccd5; stroke-width: 0.7; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="5.76" y="17.841797" transform="rotate(-0 5.76 17.841797)">tweet_eval · configuration: sentiment · split: test (12,284 rows)</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="12.96" y="40.564688" transform="rotate(-0 12.96 40.564688)">text</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="326.16" y="40.564688" transform="rotate(-0 326.16 40.564688)">label</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="369.36" y="40.564688" transform="rotate(-0 369.36 40.564688)">label name</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="12.96" y="62.404453" transform="rotate(-0 12.96 62.404453)">Westworld.Damn.There is life after Game of Thrones.</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="326.16" y="61.684453" transform="rotate(-0 326.16 61.684453)">2</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="369.36" y="61.684453" transform="rotate(-0 369.36 61.684453)">positive</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="12.96" y="83.271094" transform="rotate(-0 12.96 83.271094)">The Rocket Richard race or the Cy Young race?  #NHL</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="326.16" y="82.564453" transform="rotate(-0 326.16 82.564453)">1</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="369.36" y="82.564453" transform="rotate(-0 369.36 82.564453)">neutral</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="12.96" y="104.164453" transform="rotate(-0 12.96 104.164453)">8 is the reason I'm a Linux user.</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="326.16" y="103.444453" transform="rotate(-0 326.16 103.444453)">0</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="369.36" y="103.417734" transform="rotate(-0 369.36 103.417734)">negative</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="12.96" y="125.079336" transform="rotate(-0 12.96 125.079336)">Tonight feels like a coffee cake kinda night. Let's beat</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="12.96" y="137.271094" transform="rotate(-0 12.96 137.271094)">#NationalFastFoodDay!!</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="326.16" y="130.444453" transform="rotate(-0 326.16 130.444453)">2</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="369.36" y="130.444453" transform="rotate(-0 369.36 130.444453)">positive</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="12.96" y="158.212695" transform="rotate(-0 12.96 158.212695)">Selfie Stick, Extendable Monopod with Bluetooth Remote and</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="12.96" y="170.452695" transform="rotate(-0 12.96 170.452695)">Tripod Stand for iPhone 7 6S</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="326.16" y="163.564453" transform="rotate(-0 326.16 163.564453)">1</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="369.36" y="163.564453" transform="rotate(-0 369.36 163.564453)">neutral</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="12.96" y="191.319336" transform="rotate(-0 12.96 191.319336)">This...is upsetting and a manipulative way of diverting the</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="12.96" y="203.511094" transform="rotate(-0 12.96 203.511094)">conversation about gun control.</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="326.16" y="196.684453" transform="rotate(-0 326.16 196.684453)">0</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="369.36" y="196.657734" transform="rotate(-0 369.36 196.657734)">negative</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="12.96" y="224.391094" transform="rotate(-0 12.96 224.391094)">Going to see #FantasticBeasts and I am LIT</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="326.16" y="223.684453" transform="rotate(-0 326.16 223.684453)">2</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="369.36" y="223.684453" transform="rotate(-0 369.36 223.684453)">positive</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="12.96" y="245.271094" transform="rotate(-0 12.96 245.271094)">Like Grayson Allen, Adam is now operating at 50 percent.</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="326.16" y="244.564453" transform="rotate(-0 326.16 244.564453)">1</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 9.5px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="369.36" y="244.564453" transform="rotate(-0 369.36 244.564453)">neutral</text>
+   </g>
+   <g id="text_32">
+    <text style="font-style: italic; font-size: 9px; font-family: 'Times New Roman', 'Liberation Serif', serif; text-anchor: start" x="5.76" y="270.769922" transform="rotate(-0 5.76 270.769922)">Label mapping: 0 = negative, 1 = neutral, 2 = positive. Source: official cardiffnlp TweetEval sentiment test split.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pacab8647e6">
+   <rect x="0" y="0" width="439.2" height="298.08"/>
+  </clipPath>
+ </defs>
+</svg>
