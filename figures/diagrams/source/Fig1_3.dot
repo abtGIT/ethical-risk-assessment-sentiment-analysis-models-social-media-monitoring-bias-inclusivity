@@ -1,0 +1,18 @@
+digraph G { rankdir=TB; bgcolor="white"; pad=0.15; nodesep=0.35; ranksep=0.45; newrank=true; 
+ node [shape=box, style="rounded,filled", fontname="Liberation Serif", fontsize=13, fontcolor="#1A1A1A", penwidth=1.3, margin="0.18,0.08"];
+ edge [color="#4A5563", penwidth=1.4, arrowsize=0.8, fontname="Liberation Serif", fontsize=11, fontcolor="#333333"];
+ g [label="Gap in the reviewed literature\nno integrated sentiment-specific audit linking\nlinguistic subgroups, disparity, error/confidence,\nexplanation and external robustness", fillcolor="#F6D5DA", color="#A33A4B"];
+ c1 [label="Contribution 1\nReproducible\nlinguistic-subgroup\naudit with frozen\nrules", fillcolor="#D6E4F2", color="#2F5C8A"];
+ c2 [label="Contribution 2\nMulti-dimensional\nethical-risk evidence\nprofile, dimensions\nkept separate", fillcolor="#D3ECE6", color="#2E7D6E"];
+ c3 [label="Contribution 3\nRobustness-qualified\ninterpretation\nlocked pipeline,\nN ≥ 30 coverage rule", fillcolor="#FBE7C2", color="#A8720F"];
+ o [label="Outcome: evaluation framework and\nevidence synthesis, not a new classifier,\nfairness metric or single risk score", fillcolor="#E4E8EE", color="#5A6A7E"];
+ s [label="Supporting analyses (not separate novelty)\nAIF360 / Fairlearn equivalence check\ncontrolled model and feature comparison\nSHAP / LIME as diagnostic evidence", fillcolor="#FFFFFF", color="#7F8C9A"];
+ g -> c1 [];
+ g -> c2 [];
+ g -> c3 [];
+ c1 -> o [];
+ c2 -> o [];
+ c3 -> o [];
+ o -> s [style=dashed, dir=back];
+ {rank=same; c1; c2; c3;}
+}
