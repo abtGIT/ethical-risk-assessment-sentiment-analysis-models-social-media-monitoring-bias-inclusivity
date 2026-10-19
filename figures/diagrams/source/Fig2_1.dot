@@ -1,0 +1,20 @@
+digraph G { rankdir=TB; bgcolor="white"; pad=0.15; nodesep=0.35; ranksep=0.45; newrank=true; 
+ node [shape=box, style="rounded,filled", fontname="Liberation Serif", fontsize=13, fontcolor="#1A1A1A", penwidth=1.3, margin="0.18,0.08"];
+ edge [color="#4A5563", penwidth=1.4, arrowsize=0.8, fontname="Liberation Serif", fontsize=11, fontcolor="#333333"];
+ r [label="Raw social media text\ne.g. TweetEval: “Going to see\n#FantasticBeasts and I am LIT”", fillcolor="#FFFFFF", color="#7F8C9A"];
+ p [label="Preprocessing\ncleaning, normalisation", fillcolor="#E4E8EE", color="#5A6A7E"];
+ i [label="Informal language\nemoji, slang, sarcasm, hashtags", fillcolor="#F6D5DA", color="#A33A4B"];
+ f [label="Feature extraction\nTF-IDF, n-grams,\nsocial-media features", fillcolor="#E4E8EE", color="#5A6A7E"];
+ m [label="Sentiment classification\nmodel (e.g. LR, SVM, NB)", fillcolor="#D6E4F2", color="#2F5C8A"];
+ o [label="Sentiment output\nnegative / neutral / positive", fillcolor="#D3ECE6", color="#2E7D6E"];
+ u [label="Monitoring use\npublic opinion, customer\nfeedback, crisis response", fillcolor="#FBE7C2", color="#A8720F"];
+ r -> p [];
+ p -> f [];
+ f -> m [];
+ m -> o [];
+ o -> u [];
+ i -> p [style=dashed, color="#A33A4B", label="  affects"];
+ i -> f [style=dashed, color="#A33A4B", label="  affects"];
+ i -> o [style=dashed, color="#A33A4B", label="  can distort"];
+ {rank=same; i; f;}
+}

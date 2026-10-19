@@ -1,0 +1,28 @@
+digraph G { rankdir=TB; bgcolor="white"; pad=0.15; nodesep=0.35; ranksep=0.45; newrank=true; 
+ node [shape=box, style="rounded,filled", fontname="Liberation Serif", fontsize=17, fontcolor="#1A1A1A", penwidth=1.3, margin="0.18,0.08"];
+ edge [color="#4A5563", penwidth=1.4, arrowsize=0.8, fontname="Liberation Serif", fontsize=15, fontcolor="#333333"];
+ f0 [label="FINAL_00\nconfiguration and freeze", fillcolor="#D6E4F2", color="#2F5C8A"];
+ f1 [label="FINAL_01\ndata and subgroups", fillcolor="#D3ECE6", color="#2E7D6E"];
+ f2 [label="FINAL_02\nmodel development and lock", fillcolor="#FBE7C2", color="#A8720F"];
+ aux [label="AUX_01\nSarcOji proxy\nvalidation", fillcolor="#EDEDED", color="#8A8A8A"];
+ f3 [label="FINAL_03\nRQ1 subgroups", fillcolor="#E4E8EE", color="#5A6A7E"];
+ f4 [label="FINAL_04\nRQ2 disparity audit", fillcolor="#E4E8EE", color="#5A6A7E"];
+ f5 [label="FINAL_05\nRQ3 errors, XAI", fillcolor="#E4E8EE", color="#5A6A7E"];
+ f6 [label="FINAL_06\nRQ4 external robustness", fillcolor="#E4E8EE", color="#5A6A7E"];
+ f7 [label="FINAL_07\nethical-risk synthesis", fillcolor="#D6E4F2", color="#2F5C8A"];
+ f0 -> f1 [];
+ f1 -> f2 [];
+ f1 -> aux [style=dashed];
+ f2 -> f3 [];
+ f2 -> f4 [];
+ f2 -> f5 [];
+ f2 -> f6 [];
+ f3 -> f5 [style=invis]; f4 -> f6 [style=invis];
+ f3 -> f7 [];
+ f4 -> f7 [];
+ f5 -> f7 [];
+ f6 -> f7 [];
+ aux -> f7 [style=dashed];
+ {rank=same; f3; f4;}
+ {rank=same; f5; f6;}
+}

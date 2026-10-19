@@ -1,0 +1,16 @@
+digraph G { rankdir=TB; bgcolor="white"; pad=0.15; nodesep=0.35; ranksep=0.45; newrank=true; 
+ node [shape=box, style="rounded,filled", fontname="Liberation Serif", fontsize=15, fontcolor="#1A1A1A", penwidth=1.3, margin="0.18,0.08"];
+ edge [color="#4A5563", penwidth=1.4, arrowsize=0.8, fontname="Liberation Serif", fontsize=13, fontcolor="#333333"];
+ b [label="Baseline model comparison\nfive model families · word TF-IDF · validation Macro F1", fillcolor="#D6E4F2", color="#2F5C8A"];
+ f [label="Feature representation comparison\nword · character · social-only · hybrid", fillcolor="#D3ECE6", color="#2E7D6E"];
+ p5 [label="Five common-representation\npipelines retained for RQ2", fillcolor="#D3ECE6", color="#2E7D6E"];
+ o [label="Controlled optimisation\n5-fold train-only CV (C ∈ {0.5, 1, 2})", fillcolor="#FBE7C2", color="#A8720F"];
+ s [label="Final selection\ncalibrated Linear SVM + hybrid features, C = 0.5", fillcolor="#E4E8EE", color="#5A6A7E"];
+ l [label="Locked pipeline\nrefit train + validation; one test evaluation\nRQ1 · RQ3 · RQ4", fillcolor="#D6E4F2", color="#2F5C8A"];
+ b -> f [];
+ b -> p5 [style=dashed];
+ f -> o [];
+ o -> s [];
+ s -> l [];
+ {rank=same; f; p5;}
+}

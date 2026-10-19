@@ -1,0 +1,22 @@
+digraph G { rankdir=TB; bgcolor="white"; pad=0.15; nodesep=0.35; ranksep=0.45; newrank=true; 
+ node [shape=box, style="rounded,filled", fontname="Liberation Serif", fontsize=13, fontcolor="#1A1A1A", penwidth=1.3, margin="0.18,0.08"];
+ edge [color="#4A5563", penwidth=1.4, arrowsize=0.8, fontname="Liberation Serif", fontsize=11, fontcolor="#333333"];
+ ref [label="Reference-unmarked\n(comparison baseline)", fillcolor="#D6E4F2", color="#2F5C8A"];
+ foc [label="Focal linguistic group\nemoji / slang / sarcasm-indicated", fillcolor="#D3ECE6", color="#2E7D6E"];
+ cpd [label="CPD\nCorrectness Parity\nDifference", fillcolor="#FFFFFF", color="#7F8C9A"];
+ crr [label="CRR\nCorrectness Rate\nRatio", fillcolor="#FFFFFF", color="#7F8C9A"];
+ cc [label="Class-conditional\none-vs-rest TPR and FPR gaps", fillcolor="#FFFFFF", color="#7F8C9A"];
+ aif [label="AIF360 / Fairlearn\nequivalence cross-check", fillcolor="#FBE7C2", color="#A8720F"];
+ out [label="Bounded linguistic disparity evidence\n(not demographic fairness)", fillcolor="#E4E8EE", color="#5A6A7E"];
+ ref -> cpd [];
+ ref -> crr [];
+ ref -> cc [];
+ foc -> cpd [];
+ foc -> crr [];
+ foc -> cc [];
+ cpd -> aif [];
+ crr -> aif [];
+ cc -> aif [];
+ aif -> out [];
+ {rank=same; ref; foc;}
+}

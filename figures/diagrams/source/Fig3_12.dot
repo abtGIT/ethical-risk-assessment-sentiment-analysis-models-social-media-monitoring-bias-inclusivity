@@ -1,0 +1,21 @@
+digraph G { rankdir=LR; bgcolor="white"; pad=0.15; nodesep=0.35; ranksep=0.45; newrank=true; 
+ node [shape=box, style="rounded,filled", fontname="Liberation Serif", fontsize=13, fontcolor="#1A1A1A", penwidth=1.3, margin="0.18,0.08"];
+ edge [color="#4A5563", penwidth=1.4, arrowsize=0.8, fontname="Liberation Serif", fontsize=11, fontcolor="#333333"];
+ l [label="Locked\npipeline and\nfrozen outputs", fillcolor="#D6E4F2", color="#2F5C8A"];
+ r1 [label="RQ1 Subgroup performance\nMacro F1 · class-level · gap\n(overall: accuracy · MCC · kappa)", fillcolor="#FFFFFF", color="#7F8C9A"];
+ r2 [label="RQ2 Linguistic disparity\nCPD · CRR\nclass-conditional TPR/FPR", fillcolor="#FFFFFF", color="#7F8C9A"];
+ r3a [label="RQ3 Confidence, calibration\nHCER · MCE · ECE", fillcolor="#FFFFFF", color="#7F8C9A"];
+ r3b [label="RQ3 Errors, explainability\nerror census\nSHAP/LIME sample", fillcolor="#FFFFFF", color="#7F8C9A"];
+ r4 [label="RQ4 Robustness\nsource-to-target\nMacro F1 change", fillcolor="#FFFFFF", color="#7F8C9A"];
+ e [label="Evidence kept\nseparate: no\ntotal score\nor ranking", fillcolor="#F6D5DA", color="#A33A4B"];
+ l -> r1 [];
+ l -> r2 [];
+ l -> r3a [];
+ l -> r3b [];
+ l -> r4 [];
+ r1 -> e [];
+ r2 -> e [];
+ r3a -> e [];
+ r3b -> e [];
+ r4 -> e [];
+}

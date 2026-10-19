@@ -1,0 +1,17 @@
+digraph G { rankdir=LR; bgcolor="white"; pad=0.15; nodesep=0.35; ranksep=0.45; newrank=true; 
+ node [shape=box, style="rounded,filled", fontname="Liberation Serif", fontsize=16, fontcolor="#1A1A1A", penwidth=1.3, margin="0.18,0.08"];
+ edge [color="#4A5563", penwidth=1.4, arrowsize=0.8, fontname="Liberation Serif", fontsize=14, fontcolor="#333333"];
+ m [label="Methodological\nstrategy", fillcolor="#D6E4F2", color="#2F5C8A"];
+ p [label="Philosophy\nPositivist", fillcolor="#FFFFFF", color="#7F8C9A"];
+ a [label="Approach\nDeductive", fillcolor="#FFFFFF", color="#7F8C9A"];
+ me [label="Method\nExperimental, quantitative", fillcolor="#FFFFFF", color="#7F8C9A"];
+ l [label="Logic\nComparative", fillcolor="#FFFFFF", color="#7F8C9A"];
+ u [label="Unit of analysis\nPost and linguistic subgroup", fillcolor="#FFFFFF", color="#7F8C9A"];
+ e [label="Evaluation\nMulti-dimensional", fillcolor="#FFFFFF", color="#7F8C9A"];
+ m -> p [];
+ m -> a [];
+ m -> me [];
+ m -> l [];
+ m -> u [];
+ m -> e [];
+}
