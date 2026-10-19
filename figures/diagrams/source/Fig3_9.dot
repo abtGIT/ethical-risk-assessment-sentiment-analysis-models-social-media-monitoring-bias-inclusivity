@@ -1,0 +1,22 @@
+digraph G { rankdir=TB; bgcolor="white"; pad=0.15; nodesep=0.35; ranksep=0.45; newrank=true; 
+ node [shape=box, style="rounded,filled", fontname="Liberation Serif", fontsize=13, fontcolor="#1A1A1A", penwidth=1.3, margin="0.18,0.08"];
+ edge [color="#4A5563", penwidth=1.4, arrowsize=0.8, fontname="Liberation Serif", fontsize=11, fontcolor="#333333"];
+ o [label="Official TweetEval\nsentiment partitions\ntrain 45,615\nvalidation 2,000 · test 12,284", fillcolor="#D6E4F2", color="#2F5C8A"];
+ cl [label="Classes (neg / neu / pos)\ntrain 7,093 / 20,673 / 17,849\nval. 312 / 869 / 819\ntest 3,972 / 5,937 / 2,375", fillcolor="#FFFFFF", color="#7F8C9A"];
+ rk [label="Raw text kept\nfor tagging; markers\npreserved", fillcolor="#D3ECE6", color="#2E7D6E"];
+ fr [label="Frozen subgroup rules\non raw text (test split)\nreference-unmarked 10,388\nemoji-heavy 710 · slang-heavy 60\nsarcasm-indicated 14 · other 1,112", fillcolor="#D3ECE6", color="#2E7D6E"];
+ cc [label="Conservative cleaning\nlower-case · remove URLs\nand @user mentions\nno stemming, lemmatisation\nor stop-word removal", fillcolor="#E4E8EE", color="#5A6A7E"];
+ n [label="Emoji-bearing posts\ntrain 0 · validation 0 · test 809\nmean words per post\ntrain 19.2 · test 14.9", fillcolor="#FFF8E1", color="#9C8F6A", shape=note, style="filled"];
+ au [label="Exact-overlap audit\nzero overlap across all\nthree split pairs", fillcolor="#FBE7C2", color="#A8720F"];
+ ex [label="External targets normalised\nwith the same functions\nSentiment140: frozen 100,000-row\ndeduplicated binary sample\nSemEval-2014: 1,758 aspect rows\n(1,011 unique sentences)\nno refitting, retraining or threshold tuning", fillcolor="#FFFFFF", color="#7F8C9A"];
+ o -> cl [dir=none, style=dashed];
+ o -> rk [];
+ rk -> fr [];
+ o -> cc [];
+ fr -> n [style=dashed, dir=none, color="#A33A4B"];
+ fr -> au [];
+ cc -> au [];
+ au -> ex [];
+ {rank=same; o; cl;}
+ {rank=same; fr; cc;}
+}
