@@ -90,7 +90,7 @@ build('fig3_10',[('t','TweetEval test post (raw text, N = 12,284)','NAVY'),('r',
  ('e','Emoji-heavy\nN = 710\nemoji / word > 0.05\n“Thanksgiving food is\nbetter the second day\n[turkey][heart-eyes]”\n(positive)','TEAL'),
  ('sl','Slang-heavy\nN = 60\n51-term lexicon,\nslang / word > 0.10\n“Going to see\n#FantasticBeasts\nand I am LIT” (positive)','OCHRE'),
  ('ru','Reference-unmarked\nN = 10,388\nno focal marker, ≥ 8 words\n“Like Grayson Allen, Adam\nis now operating at\n50 percent.” (neutral)','NAVY'),
- ('ot','Other\nN = 1,112\nno focal marker,\n< 8 words\n“This is great!”\n(positive)','GREY'),('n','Interpretation rule\nN ≥ 30 stable quantitative\nN < 30 exploratory only','NOTE')],
+ ('ot','Other\nN = 1,112\nno focal marker,\n< 8 words\n“This is great!”\n(positive)','GREY'),('n','Interpretation rule\nN ≥ 30: quantitative reporting\nN < 30: exploratory only','NOTE')],
  [('t','r'),('r','s'),('r','e'),('r','sl'),('r','ru'),('r','ot'),('ot','n',NOTE_E)],fs=18,extra='nodesep=0.15;',ranks=[('s','e','sl'),('ru','ot','n')])
 # fix 3.10 layout: push reference/other row below the focal row
 s=open('./fig3_10.dot').read().replace(' ot -> n [', ' e -> ru [style=invis]; sl -> ot [style=invis];\n ot -> n [')
