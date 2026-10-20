@@ -1,0 +1,36 @@
+name: Repository integrity
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Implementation/**"
+      - "EDA/**"
+      - "manifests/**"
+      - "figures/**"
+      - "tools/**"
+      - ".github/workflows/repository-integrity.yml"
+  pull_request:
+    paths:
+      - "Implementation/**"
+      - "EDA/**"
+      - "manifests/**"
+      - "figures/**"
+      - "tools/**"
+      - ".github/workflows/repository-integrity.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-validation:
+    name: Validate frozen evidence and public notebook hygiene
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run offline repository checks
+        run: python tools/validate_repository.py
