@@ -52,7 +52,8 @@ sensitivity/
  PassC_Sensitivity_Results.xlsx
 
 tools/
- validate_repository.py          offline integrity checks
+ validate_repository.py          offline integrity checks for active and archived notebooks
+ render_conceptual_figures.py    opt-in DOT-to-PNG/SVG renderer (dry-run by default)
 
 .github/workflows/
  repository-integrity.yml        read-only validation on changes
@@ -212,6 +213,8 @@ In V13 the charts were restyled for readability: light fills with dark outlines,
 
 The conceptual diagrams (workflows, frameworks and pipelines) show no measured results. They are rendered from Graphviz sources in `figures/diagrams/source/` (`diagrams.py` and `.dot` files). `fig34.py` builds Figure 3.4 from eight example records of the official TweetEval test split. Publication PNG/SVG copies reside under `figures/diagrams/`.
 
+To regenerate existing publication diagrams **without renaming or overwriting the checked-in DOT source**, use `python tools/render_conceptual_figures.py` to preview the planned output paths, then `python tools/render_conceptual_figures.py --figure Fig3_10 --write` (or `--write` for all DOT-based diagrams) after reviewing. This requires Graphviz. The historical `figures/diagrams/source/diagrams.py` emitter writes lowercase names in its working directory; it is retained as a source-generation record, whereas the checked-in `Fig*.dot` sources and the new renderer are the preferred publication-asset workflow. Figure 3.4 has a separate data-dependent Matplotlib source.
+
 Text in the figures is set in Times New Roman. Layout is computed with Liberation Serif, which has identical character metrics, so the figures render the same where Times New Roman is not installed.
 
 ## Sensitivity checks
@@ -265,6 +268,6 @@ This repository documents the thesis implementation and reproducibility logic. I
 - The V13_13 editorial pass changed wording and Figure 3.10's explanation of the minimum-support rule, **not** the frozen research questions, four objectives, model selection, subgroup thresholds, experimental statistics or the 63 logged chart values.
 - Figure 3.10's `N ≥ 30` note denotes *minimum support* for quantitative subgroup reporting, not a statistical stability guarantee. Its source is `figures/diagrams/source/Fig3_10.dot`; the PNG/SVG assets were regenerated from that source.
 - The Figure 3.7/3.8 notebook now has the approved titles, labels and non-overlapping legend placement. The notebook contains the executed Colab previews. **The newer full-resolution output images have not yet been verified against and copied over the existing repository publication assets.**
-- All 17 active notebooks have had account-identifying Colab executor metadata removed from the current branch, leaving their code and experimental outputs intact. Historical Git commits can retain previous metadata.
-- `python tools/validate_repository.py` checks notebook structure and executor-metadata hygiene, frozen-manifest agreement, the 63-row figure-value inventory, expected publication assets and critical Figure 3.7/3.8 source conventions. The `Repository integrity` workflow runs these checks on relevant commits. **This is not an independent rerun of the research.**
+- All 33 checked-in notebooks (17 active plus 16 in the provenance archive) have had account-identifying Colab executor metadata removed from the current branch, leaving their code and experimental outputs intact. Historical Git commits can retain previous metadata.
+- `python tools/validate_repository.py` checks notebook structure and executor-metadata hygiene across both active and archived notebooks, frozen-manifest agreement, the 63-row figure-value inventory, expected publication assets and critical Figure 3.7/3.8 source conventions. The `Repository integrity` workflow runs these checks on relevant commits. **This is not an independent rerun of the research.**
 - The `archive/legacy-25-experiment/` tree is preserved for provenance, not used to support final-thesis claims. The thesis document, private datasets, prediction artefacts and model weights remain outside this public repository.
