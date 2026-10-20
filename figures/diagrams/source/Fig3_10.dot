@@ -8,7 +8,7 @@ digraph G { rankdir=TB; bgcolor="white"; pad=0.15; nodesep=0.35; ranksep=0.45; n
  sl [label="Slang-heavy\nN = 60\n51-term lexicon,\nslang / word > 0.10\n“Going to see\n#FantasticBeasts\nand I am LIT” (positive)", fillcolor="#FBE7C2", color="#A8720F"];
  ru [label="Reference-unmarked\nN = 10,388\nno focal marker, ≥ 8 words\n“Like Grayson Allen, Adam\nis now operating at\n50 percent.” (neutral)", fillcolor="#D6E4F2", color="#2F5C8A"];
  ot [label="Other\nN = 1,112\nno focal marker,\n< 8 words\n“This is great!”\n(positive)", fillcolor="#EDEDED", color="#8A8A8A"];
- n [label="Interpretation rule\nN ≥ 30 stable quantitative\nN < 30 exploratory only", fillcolor="#FFF8E1", color="#9C8F6A", shape=note, style="filled"];
+ n [label="Interpretation rule\nN ≥ 30: minimum support\nN < 30 exploratory only", fillcolor="#FFF8E1", color="#9C8F6A", shape=note, style="filled"];
  t -> r [];
  r -> s [];
  r -> e [];
