@@ -127,7 +127,7 @@
 <polyline fill="none" stroke="#9c8f6a" stroke-width="1.3" points="896,-102 896,-96 "/>
 <polyline fill="none" stroke="#9c8f6a" stroke-width="1.3" points="902,-96 896,-96 "/>
 <text text-anchor="middle" x="794.5" y="-81.6" font-family="Times New Roman" font-size="18.00" fill="#1a1a1a">Interpretation rule</text>
-<text text-anchor="middle" x="794.5" y="-61.6" font-family="Times New Roman" font-size="18.00" fill="#1a1a1a">N ≥ 30 stable quantitative</text>
+<text text-anchor="middle" x="794.5" y="-61.6" font-family="Times New Roman" font-size="18.00" fill="#1a1a1a">N ≥ 30: minimum support</text>
 <text text-anchor="middle" x="794.5" y="-41.6" font-family="Times New Roman" font-size="18.00" fill="#1a1a1a">N &lt; 30 exploratory only</text>
 </g>
 <!-- ot&#45;&gt;n -->
