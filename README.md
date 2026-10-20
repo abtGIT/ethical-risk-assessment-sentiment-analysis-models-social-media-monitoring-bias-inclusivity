@@ -51,6 +51,13 @@ figures/
 sensitivity/
  PassC_Sensitivity_Results.xlsx
 
+tools/
+ validate_repository.py          offline integrity checks
+
+.github/workflows/
+ repository-integrity.yml        read-only validation on changes
+ figure-3-10-sync.yml           Graphviz Figure 3.10 regeneration
+
 audit/
  Figure_Audit_Report.md
  comparison.md
@@ -167,13 +174,24 @@ The EDA notebooks are supporting exploratory/data-validation records and are not
 - **SemEval-2014 Task 4:** three-class domain/task-shift stress condition, not clean same-task validation.
 - **SarcOji:** auxiliary validation of the frozen sarcasm-indicated surface-cue proxy only.
 
+## Source datasets (separate downloads)
+
+The repository does not redistribute the original datasets. The primary dataset locations are:
+
+- [TweetEval — sentiment split](https://github.com/cardiffnlp/tweeteval/tree/main/datasets/sentiment), official CardiffNLP task files.
+- [Sentiment140 — Stanford original archive](https://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip), used only in the external binary robustness condition.
+- [SemEval-2014 Task 4 — organisers' data and tools](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools), the original task/dataset entry point; availability may vary.
+- [SarcOji — authors' corpus](https://github.com/VanditaGroverKapila/SarcOji), used only for auxiliary sarcasm-proxy validation (the smaller SarcOji test-set repository is not the full corpus).
+
+Acquisition, licensing and any required local preprocessing remain the responsibility of the reproducer. Reproducing the complete run also requires the matching frozen preparation artefacts or regenerating them in the documented notebook order; the checked-in code is not a self-contained data package.
+
 ## Reproducibility controls
 
 - Random seed: `42`.
 - TweetEval test data is excluded from model-family, feature and hyperparameter selection.
 - External datasets are not used for source-model selection or retuning.
 - Linguistic subgroup rules are frozen before final evaluation.
-- Stable subgroup interpretation requires `N >= 30`; smaller groups remain exploratory/descriptive.
+- `N ≥ 30` is the frozen **minimum support requirement** for quantitative subgroup reporting, not a guarantee of statistical stability; smaller groups remain exploratory/descriptive.
 - `reference-unmarked` is an operational comparison group, not a demographic or protected-class baseline.
 - CPD/CRR are study-specific correctness-parity descriptors; they are not presented as demographic statistical parity/disparate impact.
 - SHAP/LIME evidence is local and descriptive, not causal.
@@ -186,11 +204,13 @@ The exact freeze values are recorded in `manifests/SUBGROUP_FREEZE_CONFIG.json`,
 `Implementation/FIGURES_Regenerate.ipynb` redraws the thesis **data charts** — Figures 3.6, 3.7, 3.8 and 5.1 to 5.6 — from the locked outputs:
 
 - inputs (read-only): `LJMU_FINAL_EXPERIMENT_RUN/data/tweeteval_*_final.parquet` and `LJMU_FINAL_EXPERIMENT_RUN/results/*.csv`; Figure 3.8 also loads the frozen tagger from `final_thesis_utils.py`;
-- outputs: each chart as a 300 dpi PNG and an SVG, plus `FIGURE_VALUES.csv`, in `figures/`. The CSV lists all 63 plotted values, so every number in a chart can be compared with the result table it came from.
+- runtime outputs: each chart as a 300 dpi PNG and an SVG, plus `FIGURE_VALUES.csv`, in the Colab Drive folder `LJMU_FINAL_EXPERIMENT_RUN/figures/thesis_regenerated/`. The 63-row logged-values reference is checked in at `figures/FIGURE_VALUES.csv`; the checked-in PNG/SVG assets under `figures/` are separate publication copies and must be synchronised and verified after regeneration.
 
 In V13 the charts were restyled for readability: light fills with dark outlines, Times New Roman text, and an SVG copy of each chart. Only the presentation changed. The data loading and the 63 logged values are identical to the previous version, so `FIGURE_VALUES.csv` is unchanged, and Figure 5.3's labels are still rounded once from the full-precision FINAL_04 values (see `audit/`).
 
-**Figure layout reconciliation (20 October 2026):** Figures 3.6 and 3.8 have revised label and legend placement in the V13_4/V13_5 thesis working versions. Their PNG and SVG copies under `figures/` were synchronised from the same embedded assets; the frozen observations and `FIGURE_VALUES.csv` were not altered. `FIGURES_Regenerate.ipynb` includes the corresponding plotting-layout adjustment for Figure 3.6 and the earlier corrected Figure 3.8 label placement. Its affected Figure 3.6 cell output was cleared so that it must be rerun with the locked data rather than display an outdated preview. See `audit/Figure_Layout_Update_2026-10-20.md` for provenance.\n\nThe conceptual diagrams (workflows, frameworks, pipelines) show no measured data. They are drawn from Graphviz sources in `figures/diagrams/source/` (`diagrams.py` and the `.dot` files). `fig34.py` draws Figure 3.4 from the eight records of the official TweetEval test split. Rendered PNG and SVG versions are in `figures/diagrams/`.
+**Figure layout and asset status (20 October 2026):** The authoritative notebook is now committed with executed chart previews, the original Figure 3.7 panel headings, no overall title for Figure 3.8, and a legend-overlap guard. Its frozen data calculations have not been changed by the figure-layout corrections. The full-resolution **Figure 3.7/3.8 PNG and SVG publication assets still need to be retrieved from the Colab output folder, compared with the 63-row values log, and synchronised** to the checked-in `figures/` copies and the thesis. Do not mistake a saved notebook preview for a verified publication asset. Historical changes are documented in `audit/Figure_Layout_Update_2026-10-20.md`.
+
+The conceptual diagrams (workflows, frameworks and pipelines) show no measured results. They are rendered from Graphviz sources in `figures/diagrams/source/` (`diagrams.py` and `.dot` files). `fig34.py` builds Figure 3.4 from eight example records of the official TweetEval test split. Publication PNG/SVG copies reside under `figures/diagrams/`.
 
 Text in the figures is set in Times New Roman. Layout is computed with Liberation Serif, which has identical character metrics, so the figures render the same where Times New Roman is not installed.
 
@@ -240,11 +260,11 @@ The final run saves prepared data, the locked model, prediction artefacts, resul
 This repository documents the thesis implementation and reproducibility logic. It does not include a claim of universal cross-domain fairness, demographic harm, causal explanation, or a single ethical-risk score.
 
 
-## V13_13 editorial alignment (20 October 2026)
+## Release and integrity notes — V13_13 (20 October 2026)
 
-The V13_13 thesis release made a controlled editorial correction pass. It did **not** change the research questions, four objectives, frozen subgroup rules, `FINAL_00`–`FINAL_07` experimental results, or the 63 logged figure values. Figure 3.10 now labels `N ≥ 30` as **minimum support** for quantitative interpretation, not a guarantee of statistical stability. `N < 30` remains exploratory. The source generator (`figures/diagrams/source/diagrams.py`) and corresponding Figure 3.10 assets should use the same wording. The thesis document itself, private experimental datasets and generated model/prediction artefacts are intentionally excluded from this public repository.
-
-
-### Figures 3.7 and 3.8 layout repair
-
-`Implementation/FIGURES_Regenerate.ipynb` now puts both figures' legends in reserved figure-header space outside the plotting axes. Its shared save helper checks for legend/axes overlap on these two figures. Only the plotting-layout code changed; the frozen data, marker calculations, model results and `FIGURE_VALUES.csv` calculation remain untouched. The former embedded outputs for Figures 3.7 and 3.8 were cleared to prevent stale previews. **Execution verification (20 October 2026):** the updated notebook was executed in Colab with all 11 code cells completing without errors. The in-notebook previews for Figures 3.7 and 3.8 show the legends outside the plotting axes; 63 figure values were logged. **Full-resolution output sync remains pending** because the generated `figures/thesis_regenerated/` PNG/SVG files were not accessible to the connected Google Drive account at verification time. The existing GitHub image assets have not been replaced with notebook preview images.
+- The V13_13 editorial pass changed wording and Figure 3.10's explanation of the minimum-support rule, **not** the frozen research questions, four objectives, model selection, subgroup thresholds, experimental statistics or the 63 logged chart values.
+- Figure 3.10's `N ≥ 30` note denotes *minimum support* for quantitative subgroup reporting, not a statistical stability guarantee. Its source is `figures/diagrams/source/Fig3_10.dot`; the PNG/SVG assets were regenerated from that source.
+- The Figure 3.7/3.8 notebook now has the approved titles, labels and non-overlapping legend placement. The notebook contains the executed Colab previews. **The newer full-resolution output images have not yet been verified against and copied over the existing repository publication assets.**
+- All 17 active notebooks have had account-identifying Colab executor metadata removed from the current branch, leaving their code and experimental outputs intact. Historical Git commits can retain previous metadata.
+- `python tools/validate_repository.py` checks notebook structure and executor-metadata hygiene, frozen-manifest agreement, the 63-row figure-value inventory, expected publication assets and critical Figure 3.7/3.8 source conventions. The `Repository integrity` workflow runs these checks on relevant commits. **This is not an independent rerun of the research.**
+- The `archive/legacy-25-experiment/` tree is preserved for provenance, not used to support final-thesis claims. The thesis document, private datasets, prediction artefacts and model weights remain outside this public repository.
