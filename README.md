@@ -238,3 +238,8 @@ The notebooks also contain the Drive file ID used to retrieve `final_thesis_util
 The final run saves prepared data, the locked model, prediction artefacts, result tables, figures and manifests. Key externally reported outputs include the TweetEval held-out predictions, RQ1 subgroup results, five-model RQ2 disparity results, RQ3 error/confidence/XAI outputs, and RQ4 Sentiment140/SemEval robustness tables.
 
 This repository documents the thesis implementation and reproducibility logic. It does not include a claim of universal cross-domain fairness, demographic harm, causal explanation, or a single ethical-risk score.
+
+
+## V13_13 editorial alignment (20 October 2026)
+
+The V13_13 thesis release made a controlled editorial correction pass. It did **not** change the research questions, four objectives, frozen subgroup rules, `FINAL_00`–`FINAL_07` experimental results, or the 63 logged figure values. Figure 3.10 now labels `N ≥ 30` as **minimum support** for quantitative interpretation, not a guarantee of statistical stability. `N < 30` remains exploratory. The source generator (`figures/diagrams/source/diagrams.py`) and corresponding Figure 3.10 assets should use the same wording. The thesis document itself, private experimental datasets and generated model/prediction artefacts are intentionally excluded from this public repository.
