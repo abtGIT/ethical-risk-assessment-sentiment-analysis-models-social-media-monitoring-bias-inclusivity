@@ -38,9 +38,10 @@ def check_notebooks() -> int:
     paths = sorted(
         [* (ROOT / "EDA").glob("*.ipynb"),
          * (ROOT / "Implementation").glob("*.ipynb"),
-         * (ROOT / "manifests").glob("*.ipynb")]
+         * (ROOT / "manifests").glob("*.ipynb"),
+         * (ROOT / "archive").rglob("*.ipynb")]
     )
-    assert paths, "No active notebooks found"
+    assert paths, "No notebooks found"
     for path in paths:
         notebook = read_json(str(path.relative_to(ROOT)))
         assert notebook.get("nbformat") == 4, f"Not a v4 notebook: {path}"
