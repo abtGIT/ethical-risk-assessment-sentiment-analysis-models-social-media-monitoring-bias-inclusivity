@@ -243,3 +243,8 @@ This repository documents the thesis implementation and reproducibility logic. I
 ## V13_13 editorial alignment (20 October 2026)
 
 The V13_13 thesis release made a controlled editorial correction pass. It did **not** change the research questions, four objectives, frozen subgroup rules, `FINAL_00`–`FINAL_07` experimental results, or the 63 logged figure values. Figure 3.10 now labels `N ≥ 30` as **minimum support** for quantitative interpretation, not a guarantee of statistical stability. `N < 30` remains exploratory. The source generator (`figures/diagrams/source/diagrams.py`) and corresponding Figure 3.10 assets should use the same wording. The thesis document itself, private experimental datasets and generated model/prediction artefacts are intentionally excluded from this public repository.
+
+
+### Figures 3.7 and 3.8 layout repair
+
+`Implementation/FIGURES_Regenerate.ipynb` now puts both figures' legends in reserved figure-header space outside the plotting axes. Its shared save helper checks for legend/axes overlap on these two figures. Only the plotting-layout code changed; the frozen data, marker calculations, model results and `FIGURE_VALUES.csv` calculation remain untouched. The former embedded outputs for Figures 3.7 and 3.8 were cleared to prevent stale previews. **Rerun the updated notebook against the locked Colab/Drive data to regenerate their PNG/SVG assets; the source-only change does not regenerate the images automatically.**
