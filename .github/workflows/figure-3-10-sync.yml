@@ -1,0 +1,32 @@
+name: Figure 3.10 asset consistency
+
+on:
+  push:
+    paths:
+      - '.github/workflows/figure-3-10-sync.yml'
+      - 'figures/diagrams/source/Fig3_10.dot'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Render Figure 3.10 from checked-in Graphviz source
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq graphviz
+          dot -Tpng -Gdpi=300 figures/diagrams/source/Fig3_10.dot -o figures/diagrams/Fig3_10.png
+          dot -Tsvg figures/diagrams/source/Fig3_10.dot -o figures/diagrams/Fig3_10.svg
+          sed -i 's/Liberation Serif/Times New Roman/g' figures/diagrams/Fig3_10.svg
+      - name: Commit regenerated assets only when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add figures/diagrams/Fig3_10.png figures/diagrams/Fig3_10.svg
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Regenerate Figure 3.10 for V13_13 minimum-support note"
+          git push
