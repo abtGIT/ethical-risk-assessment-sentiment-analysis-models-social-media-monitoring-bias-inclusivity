@@ -1,0 +1,105 @@
+%PDF-1.4
+%dataset-sources-ascii
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R /Annots [7 0 R 8 0 R 9 0 R 10 0 R 11 0 R] >>
+endobj
+4 0 obj
+<< /Length 4751 >>
+stream
+0.095 0.18 0.285 rg 0 748 595.28 93.89 re f
+BT 1 1 1 rg /F2 20 Tf 1 0 0 1 41 799 Tm (DATASET SOURCES AND ACCESS) Tj ET
+BT 0.87 0.92 0.98 rg /F1 10 Tf 1 0 0 1 41 775 Tm (MSc thesis | Sentiment analysis, linguistic subgroups and ethical-risk evaluation) Tj ET
+BT 0.18 0.23 0.28 rg /F1 10 Tf 1 0 0 1 42 726 Tm (Four source datasets: three sentiment benchmarks and one auxiliary proxy-validation corpus.) Tj ET
+0.966 0.977 0.986 rg 40 604 515 108 re f
+0.06 0.38 0.62 rg 40 604 3.5 108 re f
+BT 0.18 0.23 0.28 rg /F2 12 Tf 1 0 0 1 54 687 Tm (01  TweetEval - Sentiment) Tj ET
+BT 0.32 0.39 0.46 rg /F2 9 Tf 1 0 0 1 449 687 Tm (PRIMARY) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9 Tf 1 0 0 1 54 669 Tm (Official dataset and split files:) Tj ET
+BT 0.04 0.31 0.63 rg /F1 9 Tf 1 0 0 1 54 655 Tm (https://github.com/cardiffnlp/tweeteval/tree/main/datasets/sentiment) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9.1 Tf 1 0 0 1 54 637 Tm (Role: develop/select models on train/validation; evaluate once on the held-out test.) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9.1 Tf 1 0 0 1 54 621 Tm (Used: 45,615 training, 2,000 validation and 12,284 test posts; three sentiment classes.) Tj ET
+0.966 0.977 0.986 rg 40 470 515 123 re f
+0.06 0.38 0.62 rg 40 470 3.5 123 re f
+BT 0.18 0.23 0.28 rg /F2 12 Tf 1 0 0 1 54 568 Tm (02  Sentiment140) Tj ET
+BT 0.32 0.39 0.46 rg /F2 9 Tf 1 0 0 1 458 568 Tm (EXTERNAL) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9 Tf 1 0 0 1 54 550 Tm (Original Stanford archive \(ZIP\):) Tj ET
+BT 0.04 0.31 0.63 rg /F1 9 Tf 1 0 0 1 54 536 Tm (https://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9.1 Tf 1 0 0 1 54 517 Tm (Role: binary-truth Twitter robustness condition using the unchanged three-class model.) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9.1 Tf 1 0 0 1 54 502 Tm (Used: frozen EDA_03 v3 sample of 100,000 unique texts \(50,000 per sentiment class\).) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9.1 Tf 1 0 0 1 54 487 Tm (Conflicting-label duplicates excluded; label-like ASCII emoticons removed for prediction.) Tj ET
+0.966 0.977 0.986 rg 40 350 515 108 re f
+0.06 0.38 0.62 rg 40 350 3.5 108 re f
+BT 0.18 0.23 0.28 rg /F2 12 Tf 1 0 0 1 54 433 Tm (03  SemEval-2014 Task 4) Tj ET
+BT 0.32 0.39 0.46 rg /F2 9 Tf 1 0 0 1 458 433 Tm (EXTERNAL) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9 Tf 1 0 0 1 54 415 Tm (Original organisers' data and tools page:) Tj ET
+BT 0.04 0.31 0.63 rg /F1 9 Tf 1 0 0 1 54 401 Tm (https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9.1 Tf 1 0 0 1 54 383 Tm (Role: review-domain, aspect-level three-class domain/task-shift stress condition.) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9.1 Tf 1 0 0 1 54 367 Tm (Used: 1,758 aspect rows from 1,011 unique sentences; no target retraining.) Tj ET
+0.966 0.977 0.986 rg 40 203 515 135 re f
+0.06 0.38 0.62 rg 40 203 3.5 135 re f
+BT 0.18 0.23 0.28 rg /F2 12 Tf 1 0 0 1 54 313 Tm (04  SarcOji) Tj ET
+BT 0.32 0.39 0.46 rg /F2 9 Tf 1 0 0 1 458 313 Tm (AUXILIARY) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9 Tf 1 0 0 1 54 295 Tm (Authors' original dataset repository:) Tj ET
+BT 0.04 0.31 0.63 rg /F1 9 Tf 1 0 0 1 54 281 Tm (https://github.com/VanditaGroverKapila/SarcOji) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9 Tf 1 0 0 1 54 264 Tm (Direct source file \(SARCOJI.df\):) Tj ET
+BT 0.04 0.31 0.63 rg /F1 8.6 Tf 1 0 0 1 54 250 Tm (https://raw.githubusercontent.com/VanditaGroverKapila/SarcOji/main/SARCOJI.df) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9.1 Tf 1 0 0 1 54 231 Tm (Used: 29,377 labelled records to assess the frozen sarcasm-indicated surface proxy.) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9.1 Tf 1 0 0 1 54 216 Tm (Auxiliary evidence only: not used for source-model selection, tuning or test labels.) Tj ET
+0.83 0.87 0.90 RG 0.6 w 42 188 m 553 188 l S
+BT 0.18 0.23 0.28 rg /F2 10.4 Tf 1 0 0 1 42 173 Tm (REPRODUCTION AND CITATION NOTES) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9.2 Tf 1 0 0 1 42 155 Tm (Links point to original providers, not to the thesis-specific processed output files.) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9.2 Tf 1 0 0 1 42 141 Tm (Regenerate frozen samples with the repository EDA/FINAL notebooks and manifest settings.) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9.2 Tf 1 0 0 1 42 127 Tm (Follow each provider's access, redistribution and attribution conditions; no data are hosted here.) Tj ET
+BT 0.35 0.39 0.44 rg /F1 8.3 Tf 1 0 0 1 42 107 Tm (Source attributions: Barbieri et al. \(2020\); Go et al. \(2009\); Pontiki et al. \(2014\);) Tj ET
+BT 0.35 0.39 0.44 rg /F1 8.3 Tf 1 0 0 1 42 95 Tm (Grover and Banati \(2022\). See the thesis references for full bibliographic details.) Tj ET
+0.85 0.88 0.91 RG 0.6 w 42 78 m 553 78 l S
+BT 0.37 0.42 0.47 rg /F1 8.4 Tf 1 0 0 1 42 63 Tm (Dataset-source register | 23 October 2026) Tj ET
+BT 0.37 0.42 0.47 rg /F1 8.4 Tf 1 0 0 1 439 63 Tm (Thesis companion document) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Type /Annot /Subtype /Link /Rect [54 653 344.7 665] /Border [0 0 0] /A << /S /URI /URI (https://github.com/cardiffnlp/tweeteval/tree/main/datasets/sentiment) >> >>
+endobj
+8 0 obj
+<< /Type /Annot /Subtype /Link /Rect [54 534 319.05 546] /Border [0 0 0] /A << /S /URI /URI (https://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip) >> >>
+endobj
+9 0 obj
+<< /Type /Annot /Subtype /Link /Rect [54 399 336.15 411] /Border [0 0 0] /A << /S /URI /URI (https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) >> >>
+endobj
+10 0 obj
+<< /Type /Annot /Subtype /Link /Rect [54 279 250.65 291] /Border [0 0 0] /A << /S /URI /URI (https://github.com/VanditaGroverKapila/SarcOji) >> >>
+endobj
+11 0 obj
+<< /Type /Annot /Subtype /Link /Rect [54 248 368.54 259.6] /Border [0 0 0] /A << /S /URI /URI (https://raw.githubusercontent.com/VanditaGroverKapila/SarcOji/main/SARCOJI.df) >> >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000032 00000 n 
+0000000081 00000 n 
+0000000138 00000 n 
+0000000322 00000 n 
+0000005124 00000 n 
+0000005221 00000 n 
+0000005323 00000 n 
+0000005506 00000 n 
+0000005684 00000 n 
+0000005866 00000 n 
+0000006029 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+6225
+%%EOF
