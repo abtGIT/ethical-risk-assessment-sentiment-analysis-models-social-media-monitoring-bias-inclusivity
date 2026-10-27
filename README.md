@@ -180,7 +180,7 @@ The EDA notebooks are supporting exploratory/data-validation records and are not
 The repository does not redistribute the original datasets. The primary dataset locations are:
 
 - [TweetEval — sentiment split](https://github.com/cardiffnlp/tweeteval/tree/main/datasets/sentiment), official CardiffNLP task files.
-- [Sentiment140 — Stanford original archive](https://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip), used only in the external binary robustness condition.
+- [Sentiment140 — dataset actually loaded in EDA_03 (`contemmcm/sentiment140` on Hugging Face)](https://huggingface.co/datasets/contemmcm/sentiment140), used only in the external binary robustness condition. The upstream Stanford ZIP link cited in earlier versions is unreliable. [Original archive mirror](https://github.com/AndreasKarasenko/sentiment140/blob/main/trainingandtestdata.zip) is provided for provenance only; the executed pipeline loads the Hugging Face representation. Cite Go, Bhayani and Huang (2009).
 - [SemEval-2014 Task 4 — organisers' data and tools](https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools), the original task/dataset entry point; availability may vary.
 - [SarcOji — authors' corpus](https://github.com/VanditaGroverKapila/SarcOji), used only for auxiliary sarcasm-proxy validation (the smaller SarcOji test-set repository is not the full corpus).
 
