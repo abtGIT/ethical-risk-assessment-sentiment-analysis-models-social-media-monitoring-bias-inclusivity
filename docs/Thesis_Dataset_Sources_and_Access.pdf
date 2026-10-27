@@ -10,7 +10,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R /Annots [7 0 R 8 0 R 9 0 R 10 0 R 11 0 R] >>
 endobj
 4 0 obj
-<< /Length 4751 >>
+<< /Length 4747 >>
 stream
 0.095 0.18 0.285 rg 0 748 595.28 93.89 re f
 BT 1 1 1 rg /F2 20 Tf 1 0 0 1 41 799 Tm (DATASET SOURCES AND ACCESS) Tj ET
@@ -28,8 +28,8 @@ BT 0.18 0.23 0.28 rg /F1 9.1 Tf 1 0 0 1 54 621 Tm (Used: 45,615 training, 2,000 
 0.06 0.38 0.62 rg 40 470 3.5 123 re f
 BT 0.18 0.23 0.28 rg /F2 12 Tf 1 0 0 1 54 568 Tm (02  Sentiment140) Tj ET
 BT 0.32 0.39 0.46 rg /F2 9 Tf 1 0 0 1 458 568 Tm (EXTERNAL) Tj ET
-BT 0.18 0.23 0.28 rg /F1 9 Tf 1 0 0 1 54 550 Tm (Original Stanford archive \(ZIP\):) Tj ET
-BT 0.04 0.31 0.63 rg /F1 9 Tf 1 0 0 1 54 536 Tm (https://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip) Tj ET
+BT 0.18 0.23 0.28 rg /F1 9 Tf 1 0 0 1 54 550 Tm (Source used in EDA_03 \(Hugging Face\):) Tj ET
+BT 0.04 0.31 0.63 rg /F1 9 Tf 1 0 0 1 54 536 Tm (https://huggingface.co/datasets/contemmcm/sentiment140) Tj ET
 BT 0.18 0.23 0.28 rg /F1 9.1 Tf 1 0 0 1 54 517 Tm (Role: binary-truth Twitter robustness condition using the unchanged three-class model.) Tj ET
 BT 0.18 0.23 0.28 rg /F1 9.1 Tf 1 0 0 1 54 502 Tm (Used: frozen EDA_03 v3 sample of 100,000 unique texts \(50,000 per sentiment class\).) Tj ET
 BT 0.18 0.23 0.28 rg /F1 9.1 Tf 1 0 0 1 54 487 Tm (Conflicting-label duplicates excluded; label-like ASCII emoticons removed for prediction.) Tj ET
@@ -73,7 +73,7 @@ endobj
 << /Type /Annot /Subtype /Link /Rect [54 653 344.7 665] /Border [0 0 0] /A << /S /URI /URI (https://github.com/cardiffnlp/tweeteval/tree/main/datasets/sentiment) >> >>
 endobj
 8 0 obj
-<< /Type /Annot /Subtype /Link /Rect [54 534 319.05 546] /Border [0 0 0] /A << /S /URI /URI (https://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip) >> >>
+<< /Type /Annot /Subtype /Link /Rect [54 534 319.05 546] /Border [0 0 0] /A << /S /URI /URI (https://huggingface.co/datasets/contemmcm/sentiment140) >> >>
 endobj
 9 0 obj
 << /Type /Annot /Subtype /Link /Rect [54 399 336.15 411] /Border [0 0 0] /A << /S /URI /URI (https://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools) >> >>
@@ -91,15 +91,15 @@ xref
 0000000081 00000 n 
 0000000138 00000 n 
 0000000322 00000 n 
-0000005124 00000 n 
-0000005221 00000 n 
-0000005323 00000 n 
-0000005506 00000 n 
-0000005684 00000 n 
-0000005866 00000 n 
-0000006029 00000 n 
+0000005121 00000 n 
+0000005218 00000 n 
+0000005320 00000 n 
+0000005503 00000 n 
+0000005673 00000 n 
+0000005855 00000 n 
+0000006018 00000 n 
 trailer
 << /Size 12 /Root 1 0 R >>
 startxref
-6225
+6214
 %%EOF
